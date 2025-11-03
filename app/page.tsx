@@ -3,28 +3,22 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#0b0818] text-white">
-      {/* arka plan blur */}
-      <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
-        <div className="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-purple-500/30 blur-3xl" />
-        <div className="absolute top-1/3 -left-10 h-72 w-72 rounded-full bg-teal-400/20 blur-3xl" />
-      </div>
-
       {/* HEADER */}
-      <header className="sticky top-0 z-20 bg-[#0b0818]/75 backdrop-blur border-b border-white/5">
-        <div className="mx-auto flex h-[88px] max-w-6xl items-center justify-between gap-6 px-5 md:px-6">
-          {/* LOGO sadece bu */}
+      <header className="sticky top-0 z-30 bg-gradient-to-r from-[#241044] via-[#33208a] to-[#5b3ed4] shadow-[0_10px_35px_rgba(0,0,0,0.25)]">
+        <div className="mx-auto flex h-[74px] max-w-6xl items-center justify-between gap-6 px-5 md:px-6">
+          {/* logo */}
           <div className="flex items-center">
             <Image
               src="/logo.png"
               alt="Lunvi"
-              width={160}
-              height={48}
+              width={140}
+              height={40}
               priority
             />
           </div>
 
-          {/* ORTA MENÜ */}
-          <nav className="hidden items-center gap-6 text-sm text-white/65 md:flex">
+          {/* center nav */}
+          <nav className="hidden items-center gap-8 text-sm text-white/90 md:flex">
             <a href="#" className="hover:text-white transition-colors">
               Product
             </a>
@@ -39,19 +33,25 @@ export default function Home() {
             </a>
           </nav>
 
-          {/* SAĞ TARAF BUTONLAR */}
+          {/* right actions */}
           <div className="flex items-center gap-3">
-            <button className="rounded-lg border border-white/15 px-4 py-2 text-xs font-medium text-white/85 hover:border-white/40 hover:text-white">
+            <button className="hidden rounded-full border border-white/25 bg-white/5 px-5 py-2 text-xs font-medium text-white/90 backdrop-blur-sm hover:bg-white/10 md:inline-flex">
               Docs
             </button>
-            <button className="rounded-lg bg-white px-4 py-2 text-xs font-medium text-[#0b0818] hover:bg-white/90">
+            <button className="rounded-full bg-white px-6 py-2 text-xs font-semibold text-[#1d123d] hover:bg-white/90">
               Start Demo
             </button>
           </div>
         </div>
       </header>
 
-      {/* HERO (aynı) */}
+      {/* background glow */}
+      <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+        <div className="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-purple-500/25 blur-3xl" />
+        <div className="absolute top-1/3 -left-10 h-72 w-72 rounded-full bg-teal-400/15 blur-3xl" />
+      </div>
+
+      {/* HERO */}
       <section className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-6 pb-16 pt-10 md:flex-row md:items-center md:justify-between md:gap-8">
         <div className="max-w-xl">
           <p className="text-xs uppercase tracking-[0.35em] text-purple-200/60">
