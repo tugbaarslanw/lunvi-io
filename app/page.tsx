@@ -10,21 +10,21 @@ export default function Home() {
       </div>
 
       {/* HEADER */}
-      <header className="sticky top-0 z-20 border-b border-white/5 bg-[#0b0818]/75 backdrop-blur">
-        <div className="mx-auto flex h-20 max-w-6xl items-center justify-between gap-6 px-5 md:px-6">
-          {/* LOGO */}
-          <div className="flex min-w-[160px] items-center">
+      <header className="sticky top-0 z-20 bg-[#0b0818]/75 backdrop-blur border-b border-white/5">
+        <div className="mx-auto flex h-[88px] max-w-6xl items-center justify-between gap-6 px-5 md:px-6">
+          {/* LOGO sadece bu */}
+          <div className="flex items-center">
             <Image
               src="/logo.png"
               alt="Lunvi"
-              width={150}
-              height={42}
+              width={160}
+              height={48}
               priority
             />
           </div>
 
-          {/* NAV */}
-          <nav className="hidden items-center gap-6 text-sm text-white/60 md:flex">
+          {/* ORTA MENÜ */}
+          <nav className="hidden items-center gap-6 text-sm text-white/65 md:flex">
             <a href="#" className="hover:text-white transition-colors">
               Product
             </a>
@@ -39,19 +39,19 @@ export default function Home() {
             </a>
           </nav>
 
-          {/* ACTIONS */}
+          {/* SAĞ TARAF BUTONLAR */}
           <div className="flex items-center gap-3">
-            <button className="rounded-lg border border-white/15 px-3.5 py-1.5 text-xs font-medium text-white/85 hover:border-white/35 hover:text-white">
+            <button className="rounded-lg border border-white/15 px-4 py-2 text-xs font-medium text-white/85 hover:border-white/40 hover:text-white">
               Docs
             </button>
-            <button className="rounded-lg bg-white px-4 py-1.5 text-xs font-medium text-[#0b0818] hover:bg-white/90">
+            <button className="rounded-lg bg-white px-4 py-2 text-xs font-medium text-[#0b0818] hover:bg-white/90">
               Start Demo
             </button>
           </div>
         </div>
       </header>
 
-      {/* HERO */}
+      {/* HERO (aynı) */}
       <section className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-6 pb-16 pt-10 md:flex-row md:items-center md:justify-between md:gap-8">
         <div className="max-w-xl">
           <p className="text-xs uppercase tracking-[0.35em] text-purple-200/60">
