@@ -4,21 +4,22 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#0b0818] text-white">
       {/* HEADER */}
-      <header className="sticky top-0 z-30 bg-gradient-to-r from-[#241044] via-[#33208a] to-[#5b3ed4] shadow-[0_10px_35px_rgba(0,0,0,0.25)]">
-        <div className="mx-auto flex h-[74px] max-w-6xl items-center justify-between gap-6 px-5 md:px-6">
+      <header className="sticky top-0 z-30 bg-gradient-to-r from-[#230f4a] via-[#31218a] to-[#8a5bff] shadow-[0_10px_35px_rgba(0,0,0,0.25)]">
+        <div className="mx-auto flex h-[78px] max-w-6xl items-center justify-between gap-6 px-6">
           {/* logo */}
           <div className="flex items-center">
             <Image
               src="/logo.png"
               alt="Lunvi"
-              width={140}
-              height={40}
+              width={150}
+              height={48}
               priority
+              className="h-11 w-auto"
             />
           </div>
 
-          {/* center nav */}
-          <nav className="hidden items-center gap-8 text-sm text-white/90 md:flex">
+          {/* orta menü */}
+          <nav className="hidden items-center gap-10 text-sm text-white/90 md:flex">
             <a href="#" className="hover:text-white transition-colors">
               Product
             </a>
@@ -33,19 +34,19 @@ export default function Home() {
             </a>
           </nav>
 
-          {/* right actions */}
+          {/* sağ butonlar */}
           <div className="flex items-center gap-3">
-            <button className="hidden rounded-full border border-white/25 bg-white/5 px-5 py-2 text-xs font-medium text-white/90 backdrop-blur-sm hover:bg-white/10 md:inline-flex">
+            <button className="hidden h-11 rounded-full border border-white/25 bg-white/8 px-6 text-sm font-medium text-white/90 backdrop-blur-sm hover:bg-white/15 md:inline-flex">
               Docs
             </button>
-            <button className="rounded-full bg-white px-6 py-2 text-xs font-semibold text-[#1d123d] hover:bg-white/90">
+            <button className="h-11 rounded-full bg-gradient-to-r from-[#c89cff] to-[#8b6dff] px-7 text-sm font-semibold text-[#150f2d] shadow-[0_6px_24px_rgba(0,0,0,0.25)] hover:brightness-[1.03]">
               Start Demo
             </button>
           </div>
         </div>
       </header>
 
-      {/* background glow */}
+      {/* arkadaki glow */}
       <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
         <div className="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-purple-500/25 blur-3xl" />
         <div className="absolute top-1/3 -left-10 h-72 w-72 rounded-full bg-teal-400/15 blur-3xl" />
