@@ -12,19 +12,22 @@ export default function Home() {
       {/* HEADER */}
       <header className="sticky top-0 z-20 border-b border-white/5 bg-[#0b0818]/75 backdrop-blur">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-6 px-5 md:px-6">
-          {/* logo alanı (stape.io gibi geniş) */}
-          <div className="flex min-w-[190px] items-center gap-3">
-            {/* logo png'yi sen ekleyeceksin: /public/logo.png */}
-            <div className="relative h-8 w-8 rounded-lg bg-white/10">
-              {/* <Image src="/logo.png" alt="Lunvi" fill className="object-contain" /> */}
-            </div>
+          {/* LOGO alanı */}
+          <div className="flex min-w-[210px] items-center gap-3">
+            <Image
+              src="/logo.png"      // public/logo.png burayı kullanır
+              alt="Lunvi"
+              width={150}
+              height={42}
+              priority
+            />
             <div className="leading-tight">
               <p className="text-sm font-medium tracking-tight">lunvi.io</p>
               <p className="text-[11px] text-white/40">separate product line</p>
             </div>
           </div>
 
-          {/* ortadaki linkler */}
+          {/* NAV */}
           <nav className="hidden items-center gap-5 text-sm text-white/50 md:flex">
             <a href="#" className="hover:text-white transition-colors">
               Overview
@@ -37,7 +40,7 @@ export default function Home() {
             </a>
           </nav>
 
-          {/* sağ taraf */}
+          {/* ACTIONS */}
           <div className="flex items-center gap-2">
             <button className="hidden rounded-lg border border-white/10 px-3 py-1.5 text-xs text-white/70 hover:border-white/30 hover:text-white md:inline-flex">
               Changelog
@@ -49,7 +52,7 @@ export default function Home() {
         </div>
       </header>
 
-      {/* HERO (aynı bırakıyorum) */}
+      {/* HERO */}
       <section className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-6 pb-16 pt-10 md:flex-row md:items-center md:justify-between md:gap-8">
         <div className="max-w-xl">
           <p className="text-xs uppercase tracking-[0.35em] text-purple-200/60">
