@@ -12,10 +12,10 @@ export default function Home() {
       {/* HEADER */}
       <header className="sticky top-0 z-20 border-b border-white/5 bg-[#0b0818]/75 backdrop-blur">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-6 px-5 md:px-6">
-          {/* LOGO alanı */}
+          {/* LOGO */}
           <div className="flex min-w-[210px] items-center gap-3">
             <Image
-              src="/logo.png"      // public/logo.png burayı kullanır
+              src="/logo.png"   // public/logo.png buradan gelir
               alt="Lunvi"
               width={150}
               height={42}
