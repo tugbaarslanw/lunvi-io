@@ -8,7 +8,8 @@
 }
 
 body {
-  @apply bg-[color:var(--bg)] text-[color:var(--text)];
   margin: 0;
+  background: #0b0818;
+  color: #ffffff;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
