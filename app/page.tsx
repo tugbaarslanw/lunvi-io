@@ -19,7 +19,7 @@ export default function Home() {
           </div>
 
           {/* SAĞ: nav + butonlar birlikte */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-7">
             {/* nav */}
             <nav className="hidden items-center gap-5 text-sm text-white/90 md:flex">
               <a href="#" className="hover:text-white transition-colors">
