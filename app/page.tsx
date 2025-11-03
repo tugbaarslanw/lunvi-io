@@ -11,42 +11,41 @@ export default function Home() {
 
       {/* HEADER */}
       <header className="sticky top-0 z-20 border-b border-white/5 bg-[#0b0818]/75 backdrop-blur">
-        <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-6 px-5 md:px-6">
+        <div className="mx-auto flex h-20 max-w-6xl items-center justify-between gap-6 px-5 md:px-6">
           {/* LOGO */}
-          <div className="flex min-w-[210px] items-center gap-3">
+          <div className="flex min-w-[160px] items-center">
             <Image
-              src="/logo.png"   // public/logo.png buradan gelir
+              src="/logo.png"
               alt="Lunvi"
               width={150}
               height={42}
               priority
             />
-            <div className="leading-tight">
-              <p className="text-sm font-medium tracking-tight">lunvi.io</p>
-              <p className="text-[11px] text-white/40">separate product line</p>
-            </div>
           </div>
 
           {/* NAV */}
-          <nav className="hidden items-center gap-5 text-sm text-white/50 md:flex">
+          <nav className="hidden items-center gap-6 text-sm text-white/60 md:flex">
             <a href="#" className="hover:text-white transition-colors">
-              Overview
+              Product
             </a>
             <a href="#" className="hover:text-white transition-colors">
-              Endpoints
+              Solutions
             </a>
             <a href="#" className="hover:text-white transition-colors">
-              Docs
+              Integrations
+            </a>
+            <a href="#" className="hover:text-white transition-colors">
+              Pricing
             </a>
           </nav>
 
           {/* ACTIONS */}
-          <div className="flex items-center gap-2">
-            <button className="hidden rounded-lg border border-white/10 px-3 py-1.5 text-xs text-white/70 hover:border-white/30 hover:text-white md:inline-flex">
-              Changelog
+          <div className="flex items-center gap-3">
+            <button className="rounded-lg border border-white/15 px-3.5 py-1.5 text-xs font-medium text-white/85 hover:border-white/35 hover:text-white">
+              Docs
             </button>
-            <button className="rounded-lg bg-white text-xs font-medium text-[#0b0818] px-3.5 py-1.5 hover:bg-white/90">
-              Dashboard
+            <button className="rounded-lg bg-white px-4 py-1.5 text-xs font-medium text-[#0b0818] hover:bg-white/90">
+              Start Demo
             </button>
           </div>
         </div>
