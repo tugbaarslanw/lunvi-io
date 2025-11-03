@@ -4,24 +4,24 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#0b0818] text-white">
       {/* HEADER */}
-      <header className="sticky top-0 z-30 bg-gradient-to-r from-[#230f4a] via-[#31218a] to-[#8a5bff] shadow-[0_10px_35px_rgba(0,0,0,0.25)]">
-        <div className="mx-auto flex h-[78px] max-w-6xl items-center px-4 md:px-6">
-          {/* SOL: Logo sola yakın */}
+      <header className="sticky top-0 z-30 bg-gradient-to-r from-[#230f4a] via-[#3a2692] to-[#8a5bff] shadow-[0_10px_35px_rgba(0,0,0,0.25)]">
+        <div className="mx-auto flex h-[74px] max-w-6xl items-center justify-between px-6">
+          {/* SOL: logo */}
           <div className="flex items-center">
             <Image
               src="/logo.png"
               alt="Lunvi"
-              width={145}
-              height={44}
+              width={135}
+              height={40}
               priority
-              className="h-11 w-auto"
+              className="h-10 w-auto"
             />
           </div>
 
-          {/* SAĞ TARAFIN HEPSİ */}
-          <div className="ml-auto flex items-center gap-7">
-            {/* Menü */}
-            <nav className="hidden items-center gap-6 text-sm text-white/90 md:flex">
+          {/* SAĞ: nav + butonlar birlikte */}
+          <div className="flex items-center gap-6">
+            {/* nav */}
+            <nav className="hidden items-center gap-5 text-sm text-white/90 md:flex">
               <a href="#" className="hover:text-white transition-colors">
                 Product
               </a>
@@ -36,12 +36,12 @@ export default function Home() {
               </a>
             </nav>
 
-            {/* Butonlar sağa yakın, daha büyük */}
+            {/* butonlar */}
             <div className="flex items-center gap-3">
-              <button className="hidden h-11 rounded-full border border-white/25 bg-white/8 px-6 text-sm font-medium text-white/90 backdrop-blur-sm hover:bg-white/15 md:inline-flex">
+              <button className="hidden rounded-full border border-white/25 bg-white/5 px-5 py-2 text-xs font-medium text-white/90 backdrop-blur-sm hover:bg-white/10 md:inline-flex">
                 Docs
               </button>
-              <button className="h-11 rounded-full bg-white px-7 text-sm font-semibold text-[#150f2d] shadow-[0_6px_24px_rgba(0,0,0,0.25)] hover:bg-white/90">
+              <button className="rounded-full bg-white px-6 py-2 text-xs font-semibold text-[#150f2d] shadow-[0_6px_24px_rgba(0,0,0,0.25)] hover:bg-white/90">
                 Start Demo
               </button>
             </div>
