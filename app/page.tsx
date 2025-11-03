@@ -1,27 +1,56 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#0b0818] text-white">
-      {/* parlak arka plan blur */}
+      {/* arka plan blur */}
       <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
         <div className="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-purple-500/30 blur-3xl" />
         <div className="absolute top-1/3 -left-10 h-72 w-72 rounded-full bg-teal-400/20 blur-3xl" />
       </div>
 
-      <header className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-6">
-        <div className="flex items-center gap-2">
-          <div className="h-7 w-7 rounded-lg bg-gradient-to-br from-purple-400 to-indigo-500" />
-          <span className="text-sm font-medium tracking-[0.25em] text-white/60 uppercase">
-            lunvi.io
-          </span>
-        </div>
-        <div className="hidden gap-3 text-sm text-white/40 md:flex">
-          <span className="hover:text-white/80 transition">Docs</span>
-          <span className="hover:text-white/80 transition">Changelog</span>
-          <span className="hover:text-white/80 transition">Support</span>
+      {/* HEADER */}
+      <header className="sticky top-0 z-20 border-b border-white/5 bg-[#0b0818]/75 backdrop-blur">
+        <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-6 px-5 md:px-6">
+          {/* logo alanı (stape.io gibi geniş) */}
+          <div className="flex min-w-[190px] items-center gap-3">
+            {/* logo png'yi sen ekleyeceksin: /public/logo.png */}
+            <div className="relative h-8 w-8 rounded-lg bg-white/10">
+              {/* <Image src="/logo.png" alt="Lunvi" fill className="object-contain" /> */}
+            </div>
+            <div className="leading-tight">
+              <p className="text-sm font-medium tracking-tight">lunvi.io</p>
+              <p className="text-[11px] text-white/40">separate product line</p>
+            </div>
+          </div>
+
+          {/* ortadaki linkler */}
+          <nav className="hidden items-center gap-5 text-sm text-white/50 md:flex">
+            <a href="#" className="hover:text-white transition-colors">
+              Overview
+            </a>
+            <a href="#" className="hover:text-white transition-colors">
+              Endpoints
+            </a>
+            <a href="#" className="hover:text-white transition-colors">
+              Docs
+            </a>
+          </nav>
+
+          {/* sağ taraf */}
+          <div className="flex items-center gap-2">
+            <button className="hidden rounded-lg border border-white/10 px-3 py-1.5 text-xs text-white/70 hover:border-white/30 hover:text-white md:inline-flex">
+              Changelog
+            </button>
+            <button className="rounded-lg bg-white text-xs font-medium text-[#0b0818] px-3.5 py-1.5 hover:bg-white/90">
+              Dashboard
+            </button>
+          </div>
         </div>
       </header>
 
-      <section className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-6 pb-16 pt-4 md:flex-row md:items-center md:justify-between md:gap-8">
+      {/* HERO (aynı bırakıyorum) */}
+      <section className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-6 pb-16 pt-10 md:flex-row md:items-center md:justify-between md:gap-8">
         <div className="max-w-xl">
           <p className="text-xs uppercase tracking-[0.35em] text-purple-200/60">
             separate line • tracking • io
