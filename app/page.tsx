@@ -19,9 +19,9 @@ export default function Home() {
           </div>
 
           {/* SAĞ: nav + butonlar birlikte */}
-          <div className="flex items-center gap-7">
+          <div className="flex items-center gap-4">
             {/* nav */}
-            <nav className="hidden items-center gap-5 text-sm text-white/90 md:flex">
+            <nav className="hidden items-center gap-6 text-sm text-white/90 md:flex">
               <a href="#" className="hover:text-white transition-colors">
                 Product
               </a>
@@ -37,7 +37,7 @@ export default function Home() {
             </nav>
 
             {/* butonlar */}
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-7">
               <button className="hidden rounded-full border border-white/25 bg-white/5 px-5 py-2 text-xs font-medium text-white/90 backdrop-blur-sm hover:bg-white/10 md:inline-flex">
                 Docs
               </button>
