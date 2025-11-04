@@ -94,23 +94,27 @@ export default function Home() {
 
               {/* CTA */}
               <div className="mt-8 flex flex-wrap items-center gap-3">
-                <button className="rounded-full bg-white px-6 py-2 text-sm font-semibold text-[#0b0d16] shadow-md hover:shadow-lg transition">
+                {/* büyütülmüş */}
+                <button className="rounded-full bg-white px-7 py-2.5 text-sm font-semibold text-[#0b0d16] shadow-md hover:shadow-lg transition">
                   Start Demo
                 </button>
-                <button className="rounded-full border border-white/15 bg-white/5 px-5 py-2 text-sm text-white/85 hover:bg-white/10 transition">
+                {/* büyütülmüş */}
+                <button className="rounded-full border border-white/15 bg-white/5 px-6 py-2.5 text-sm text-white/85 hover:bg-white/10 transition">
                   See Pricing
                 </button>
               </div>
 
-              {/* chips */}
+              {/* chips - neon kaplı versiyon */}
               <div className="mt-7 flex flex-wrap gap-3">
                 {["EU Hosting", "GDPR / KVKK", "99.9% uptime", "Consent Mode v2"].map(
                   (item) => (
                     <span
                       key={item}
-                      className="rounded-full bg-white/5 px-4 py-1 text-xs text-slate-100/75 border border-white/5"
+                      className="rounded-full bg-[linear-gradient(120deg,rgba(168,85,247,0.35),rgba(59,130,246,0.2))] p-[1.5px]"
                     >
-                      {item}
+                      <span className="block rounded-full bg-[#050818]/65 px-4 py-1 text-xs text-slate-100/90 border border-white/5 backdrop-blur-sm">
+                        {item}
+                      </span>
                     </span>
                   )
                 )}
@@ -194,22 +198,22 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* CARD 3 – updated */}
-              <div className="relative rounded-[30px] bg-[linear-gradient(120deg,#ff4d8a_0%,#e629ff_50%,#6d2dff_100%)] p-[1.5px]">
-                <div className="relative rounded-[28px] bg-[#060918]/70 backdrop-blur-md border border-white/5 px-7 py-6 flex gap-5 min-h-[145px]">
-                  {/* neon icon – heart */}
-                  <div className="mt-1 h-14 w-14 rounded-[1.2rem] bg-[radial-gradient(circle_at_10%_10%,#ffe5ef,_#ff5f9e_55%,rgba(255,95,158,0)_75%)] flex items-center justify-center shadow-[0_0_25px_rgba(255,95,158,0.7)]">
+              {/* CARD 3 – kalp ikon + neon kırmızı/mor */}
+              <div className="relative rounded-[30px] bg-[linear-gradient(120deg,#ff4d8a_0%,#b026ff_55%,#4f0aff_100%)] p-[1.5px]">
+                <div className="relative rounded-[28px] bg-[radial-gradient(circle_at_10%_10%,rgba(255,176,190,0.3),rgba(92,0,84,0.35)_55%,rgba(38,0,58,0.5)_100%)] backdrop-blur-md border border-white/5 px-7 py-6 flex gap-5 min-h-[145px]">
+                  {/* neon heart icon */}
+                  <div className="mt-1 h-14 w-14 rounded-[1.2rem] bg-[radial-gradient(circle_at_10%_10%,#ffe1f0,_#ff5ca8_55%,rgba(255,106,160,0)_75%)] flex items-center justify-center shadow-[0_0_25px_rgba(255,92,168,0.7)]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
                       className="h-7 w-7 text-white/95"
+                      viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      strokeWidth="1.6"
+                      strokeWidth="1.7"
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     >
-                      <path d="M20.8 5.8a4.6 4.6 0 0 0-6.5 0L12 8.1l-2.3-2.3a4.6 4.6 0 0 0-6.5 6.5l2.3 2.3L12 21l6.5-6.4 2.3-2.3a4.6 4.6 0 0 0 0-6.5z" />
+                      <path d="M20.8 4.6c-1.5-1.5-3.9-1.5-5.4 0l-.9.9-.9-.9c-1.5-1.5-3.9-1.5-5.4 0-1.5 1.5-1.5 3.9 0 5.4l6.3 6.3 6.3-6.3c1.5-1.5 1.5-3.9 0-5.4z" />
                     </svg>
                   </div>
                   <div className="flex-1">
