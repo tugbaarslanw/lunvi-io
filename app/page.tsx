@@ -69,9 +69,11 @@ export default function Home() {
               {/* title */}
               <h1 className="text-4xl leading-tight font-semibold md:text-5xl space-y-1">
                 <span className="block text-white">The premium gateway</span>
-                <span className="block text-white">for</span>
-                <span className="block bg-gradient-to-r from-[#a855f7] via-[#8b5cf6] to-[#6366f1] bg-clip-text text-transparent">
-                  server-side
+                <span className="block text-white">
+                  for{" "}
+                  <span className="bg-gradient-to-r from-[#a855f7] via-[#8b5cf6] to-[#6366f1] bg-clip-text text-transparent">
+                    server-side
+                  </span>
                 </span>
                 <span className="block bg-gradient-to-r from-[#a855f7] via-[#8b5cf6] to-[#6366f1] bg-clip-text text-transparent">
                   Conversions APIs
