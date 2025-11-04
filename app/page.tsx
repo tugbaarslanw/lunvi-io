@@ -92,19 +92,17 @@ export default function Home() {
                 & debugger.
               </p>
 
-              {/* CTA */}
+              {/* CTA (büyütülmüş) */}
               <div className="mt-8 flex flex-wrap items-center gap-3">
-                {/* büyütülmüş */}
                 <button className="rounded-full bg-white px-7 py-2.5 text-sm font-semibold text-[#0b0d16] shadow-md hover:shadow-lg transition">
                   Start Demo
                 </button>
-                {/* büyütülmüş */}
                 <button className="rounded-full border border-white/15 bg-white/5 px-6 py-2.5 text-sm text-white/85 hover:bg-white/10 transition">
                   See Pricing
                 </button>
               </div>
 
-              {/* chips - neon kaplı versiyon */}
+              {/* chips - neon kaplı */}
               <div className="mt-7 flex flex-wrap gap-3">
                 {["EU Hosting", "GDPR / KVKK", "99.9% uptime", "Consent Mode v2"].map(
                   (item) => (
@@ -125,15 +123,51 @@ export default function Home() {
                 <p className="text-[10px] tracking-[0.4em] uppercase text-slate-100/50 mb-3">
                   Optimized for
                 </p>
-                <div className="flex gap-3">
-                  {["Meta CAPI", "GA4", "TikTok", "Google Ads"].map((item) => (
-                    <span
-                      key={item}
-                      className="rounded-md bg-white/5 px-3 py-1 text-xs text-slate-100/80 border border-white/5"
-                    >
-                      {item}
-                    </span>
-                  ))}
+                <div className="flex flex-wrap gap-3">
+                  {/* /public/logos/meta-capi.png */}
+                  <div className="flex items-center gap-2 rounded-full bg-white/5 px-3 py-1 border border-white/5">
+                    <Image
+                      src="/logos/meta-capi.png"
+                      alt="Meta CAPI"
+                      width={20}
+                      height={20}
+                      className="h-5 w-5 object-contain"
+                    />
+                    <span className="text-xs text-white/85">Meta CAPI</span>
+                  </div>
+                  {/* /public/logos/ga4.png */}
+                  <div className="flex items-center gap-2 rounded-full bg-white/5 px-3 py-1 border border-white/5">
+                    <Image
+                      src="/logos/ga4.png"
+                      alt="GA4"
+                      width={20}
+                      height={20}
+                      className="h-5 w-5 object-contain"
+                    />
+                    <span className="text-xs text-white/85">GA4</span>
+                  </div>
+                  {/* /public/logos/tiktok.png */}
+                  <div className="flex items-center gap-2 rounded-full bg-white/5 px-3 py-1 border border-white/5">
+                    <Image
+                      src="/logos/tiktok.png"
+                      alt="TikTok"
+                      width={20}
+                      height={20}
+                      className="h-5 w-5 object-contain"
+                    />
+                    <span className="text-xs text-white/85">TikTok</span>
+                  </div>
+                  {/* /public/logos/google-ads.png */}
+                  <div className="flex items-center gap-2 rounded-full bg-white/5 px-3 py-1 border border-white/5">
+                    <Image
+                      src="/logos/google-ads.png"
+                      alt="Google Ads"
+                      width={20}
+                      height={20}
+                      className="h-5 w-5 object-contain"
+                    />
+                    <span className="text-xs text-white/85">Google Ads</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -198,18 +232,18 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* CARD 3 – kalp ikon + neon kırmızı/mor */}
-              <div className="relative rounded-[30px] bg-[linear-gradient(120deg,#ff4d8a_0%,#b026ff_55%,#4f0aff_100%)] p-[1.5px]">
-                <div className="relative rounded-[28px] bg-[radial-gradient(circle_at_10%_10%,rgba(255,176,190,0.3),rgba(92,0,84,0.35)_55%,rgba(38,0,58,0.5)_100%)] backdrop-blur-md border border-white/5 px-7 py-6 flex gap-5 min-h-[145px]">
+              {/* CARD 3 – geri alınmış cam renk */}
+              <div className="relative rounded-[30px] bg-[linear-gradient(120deg,#ff4d8a_0%,#e629ff_50%,#6d2dff_100%)] p-[1.5px]">
+                <div className="relative rounded-[28px] bg-[#060918]/70 backdrop-blur-md border border-white/5 px-7 py-6 flex gap-5 min-h-[145px]">
                   {/* neon heart icon */}
-                  <div className="mt-1 h-14 w-14 rounded-[1.2rem] bg-[radial-gradient(circle_at_10%_10%,#ffe1f0,_#ff5ca8_55%,rgba(255,106,160,0)_75%)] flex items-center justify-center shadow-[0_0_25px_rgba(255,92,168,0.7)]">
+                  <div className="mt-1 h-14 w-14 rounded-[1.2rem] bg-[radial-gradient(circle_at_10%_10%,#ffe5ef,_#ff5f9e_55%,rgba(255,95,158,0)_75%)] flex items-center justify-center shadow-[0_0_25px_rgba(255,95,158,0.7)]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-7 w-7 text-white/95"
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      strokeWidth="1.7"
+                      strokeWidth="1.6"
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     >
