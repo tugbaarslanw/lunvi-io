@@ -71,11 +71,11 @@ export default function Home() {
                 <span className="block text-white">The premium gateway</span>
                 <span className="block text-white">
                   for{" "}
-                  <span className="bg-gradient-to-r from-[#a855f7] via-[#8b5cf6] to-[#6366f1] bg-clip-text text-transparent">
+                  <span className="text-[#a855f7]">
                     server-side
                   </span>
                 </span>
-                <span className="block bg-gradient-to-r from-[#a855f7] via-[#8b5cf6] to-[#6366f1] bg-clip-text text-transparent">
+                <span className="block text-[#a855f7]">
                   Conversions APIs
                   <span className="text-white">.</span>
                 </span>
@@ -187,7 +187,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* PRODUCT SECTION */}
+        {/* PRODUCT SECTION – daha aşağıda */}
         <section className="mx-auto w-full max-w-6xl px-4 lg:px-0 pb-16 pt-40">
           <h2 className="text-lg font-semibold mb-2">Product</h2>
           <p className="text-sm text-slate-100/55 max-w-2xl">
