@@ -194,26 +194,22 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* CARD 3 */}
-              <div className="relative rounded-[30px] bg-[linear-gradient(120deg,#ff4d8a_0%,#b026ff_55%,#4f0aff_100%)] p-[1.5px]">
-                <div className="relative rounded-[28px] bg-[radial-gradient(circle_at_10%_10%,rgba(255,176,190,0.3),rgba(92,0,84,0.35)_55%,rgba(38,0,58,0.5)_100%)] backdrop-blur-md border border-white/5 px-7 py-6 flex gap-5 min-h-[145px]">
-                  {/* neon icon */}
-                  <div className="mt-1 h-14 w-14 rounded-[1.2rem] bg-[radial-gradient(circle_at_10%_10%,#fff0d8,_#ff6a8f_60%,rgba(255,153,106,0)_75%)] flex items-center justify-center shadow-[0_0_25px_rgba(255,106,160,0.75)]">
+              {/* CARD 3 – updated */}
+              <div className="relative rounded-[30px] bg-[linear-gradient(120deg,#ff4d8a_0%,#e629ff_50%,#6d2dff_100%)] p-[1.5px]">
+                <div className="relative rounded-[28px] bg-[#060918]/70 backdrop-blur-md border border-white/5 px-7 py-6 flex gap-5 min-h-[145px]">
+                  {/* neon icon – heart */}
+                  <div className="mt-1 h-14 w-14 rounded-[1.2rem] bg-[radial-gradient(circle_at_10%_10%,#ffe5ef,_#ff5f9e_55%,rgba(255,95,158,0)_75%)] flex items-center justify-center shadow-[0_0_25px_rgba(255,95,158,0.7)]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-7 w-7 text-white/90"
                       viewBox="0 0 24 24"
+                      className="h-7 w-7 text-white/95"
                       fill="none"
                       stroke="currentColor"
                       strokeWidth="1.6"
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     >
-                      <path d="M20 13V7a2 2 0 0 0-2-2h-4" />
-                      <path d="M4 11v6a2 2 0 0 0 2 2h4" />
-                      <path d="M9 15h.01" />
-                      <path d="M15 9h.01" />
-                      <path d="m3 3 18 18" />
+                      <path d="M20.8 5.8a4.6 4.6 0 0 0-6.5 0L12 8.1l-2.3-2.3a4.6 4.6 0 0 0-6.5 6.5l2.3 2.3L12 21l6.5-6.4 2.3-2.3a4.6 4.6 0 0 0 0-6.5z" />
                     </svg>
                   </div>
                   <div className="flex-1">
