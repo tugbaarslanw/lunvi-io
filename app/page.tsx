@@ -52,7 +52,7 @@ export default function Home() {
 
       {/* HERO */}
       <section className="relative overflow-hidden bg-gradient-to-b from-[#492a91] via-[#352066] to-[#0b0714]">
-        {/* çok ışık saçmasın diye glowları azalttım */}
+        {/* hafif glowlar */}
         <div className="pointer-events-none absolute -right-20 -top-24 h-56 w-56 rounded-full bg-[#9b83d9]/12 blur-2xl" />
         <div className="pointer-events-none absolute -left-40 top-12 h-[420px] w-[420px] rounded-full bg-[#805de3]/10 blur-3xl" />
         <div className="pointer-events-none absolute right-4 top-72 h-48 w-48 rounded-full bg-[#34d1be]/10 blur-2xl" />
@@ -105,39 +105,81 @@ export default function Home() {
             </div>
           </div>
 
-          {/* sağ cam kutular – daha az glow, neon kenarlı */}
+          {/* sağ neon cam kutular */}
           <div className="relative z-10 flex flex-1 flex-col gap-5 lg:max-w-sm">
-            {/* kart 1 */}
-            <div className="rounded-3xl border border-[#c6b7ff]/60 bg-white/4 p-5 backdrop-blur-md">
-              <div className="mb-3 h-7 w-7 rounded-lg bg-gradient-to-br from-[#d6d0ff] to-[#8f82ff] shadow-[0_0_10px_rgba(181,171,255,0.5)]" />
-              <h2 className="text-sm font-semibold">Key capabilities</h2>
-              <p className="mt-2 text-sm text-white/85">
-                Custom domain (CNAME), managed SSL, bölgesel deploy ve gerçek zamanlı
-                teslimat metrikleri.
-              </p>
+            {/* kart 1 – mor */}
+            <div className="neon-border-purple rounded-[28px] p-[1.5px]">
+              <div className="rounded-[24px] bg-[#120b22]/70 p-5 backdrop-blur-md">
+                <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-2xl bg-gradient-to-br from-[#d9d3ff] to-[#7f71ff] shadow-[0_0_18px_rgba(190,177,255,0.7)]">
+                  <span className="text-[12px] text-[#120b22] font-bold">●</span>
+                </div>
+                <h2 className="text-sm font-semibold">Key capabilities</h2>
+                <p className="mt-2 text-sm text-white/85">
+                  Custom domain (CNAME), managed SSL, bölgesel deploy ve gerçek zamanlı
+                  teslimat metrikleri.
+                </p>
+              </div>
             </div>
 
-            {/* kart 2 */}
-            <div className="rounded-3xl border border-[#6ff3d9]/60 bg-white/4 p-5 backdrop-blur-md">
-              <div className="mb-3 h-7 w-7 rounded-lg bg-gradient-to-br from-[#a4ffe9] to-[#35c6a7] shadow-[0_0_10px_rgba(145,255,223,0.5)]" />
-              <h2 className="text-sm font-semibold">Use cases</h2>
-              <p className="mt-2 text-sm text-white/85">
-                E-commerce event’leri, lead enrichment, ajans çoklu-tenant kurulumları
-                için hazır preset’ler.
-              </p>
+            {/* kart 2 – turkuaz/mavi */}
+            <div className="neon-border-cyan rounded-[28px] p-[1.5px]">
+              <div className="rounded-[24px] bg-[#0d1721]/65 p-5 backdrop-blur-md">
+                <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-2xl bg-gradient-to-br from-[#b5fff1] to-[#2ed8bf] shadow-[0_0_18px_rgba(150,255,233,0.7)]">
+                  <span className="text-[12px] text-[#0d1721] font-bold">◆</span>
+                </div>
+                <h2 className="text-sm font-semibold">Use cases</h2>
+                <p className="mt-2 text-sm text-white/85">
+                  E-commerce event’leri, lead enrichment, ajans çoklu-tenant kurulumları
+                  için hazır preset’ler.
+                </p>
+              </div>
             </div>
 
-            {/* kart 3 */}
-            <div className="rounded-3xl border border-[#ffe1a8]/55 bg-white/4 p-5 backdrop-blur-md">
-              <div className="mb-3 h-7 w-7 rounded-lg bg-gradient-to-br from-[#ffe2af] to-[#ffb85f] shadow-[0_0_10px_rgba(255,210,150,0.45)]" />
-              <h2 className="text-sm font-semibold">Health at a glance</h2>
-              <p className="mt-2 text-sm text-white/85">
-                Match quality ↑ · Dedup oranı yüksek · Son 24h error düşüklüğü · P95
-                latency stabil.
-              </p>
+            {/* kart 3 – güçlü mor/pembe */}
+            <div className="neon-border-magenta rounded-[28px] p-[1.5px]">
+              <div className="rounded-[24px] bg-[#1a0f1e]/65 p-5 backdrop-blur-md">
+                <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-2xl bg-gradient-to-br from-[#ffe3b6] to-[#ff7dc7] shadow-[0_0_18px_rgba(255,150,210,0.6)]">
+                  <span className="text-[12px] text-[#1a0f1e] font-bold">▲</span>
+                </div>
+                <h2 className="text-sm font-semibold">Health at a glance</h2>
+                <p className="mt-2 text-sm text-white/85">
+                  Match quality ↑ · Dedup oranı yüksek · Son 24h error düşüklüğü · P95
+                  latency stabil.
+                </p>
+              </div>
             </div>
           </div>
         </div>
+
+        {/* hareketli border animasyonu */}
+        <style jsx>{`
+          @keyframes neonShift {
+            0% {
+              background-position: 0% 50%;
+            }
+            50% {
+              background-position: 100% 50%;
+            }
+            100% {
+              background-position: 0% 50%;
+            }
+          }
+          .neon-border-purple {
+            background: linear-gradient(120deg, #c3b5ff, #6e4fff, #c3b5ff);
+            background-size: 200% 200%;
+            animation: neonShift 6s ease-in-out infinite;
+          }
+          .neon-border-cyan {
+            background: linear-gradient(120deg, #9cfff1, #2ed8bf, #68e2ff);
+            background-size: 200% 200%;
+            animation: neonShift 6s ease-in-out infinite;
+          }
+          .neon-border-magenta {
+            background: linear-gradient(120deg, #ffb7ed, #a35bff, #ffb7ed);
+            background-size: 200% 200%;
+            animation: neonShift 7s ease-in-out infinite;
+          }
+        `}</style>
       </section>
 
       {/* ALT BLOK */}
@@ -145,7 +187,7 @@ export default function Home() {
         <h2 className="text-lg font-semibold text-white/90">Product</h2>
         <p className="mt-2 max-w-2xl text-sm text-white/45">
           Buraya lunvi.io hattında çalışacak endpoint, workflow ve logging bölümlerini
-          ekleyebilirsin. Üstteki mor hero ile aynı çizgide kalacak şekilde koyu tasarladık.
+          ekleyebilirsin. Üstteki hero ile aynı koyu mor çizgide.
         </p>
       </section>
 
