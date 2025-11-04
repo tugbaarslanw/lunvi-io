@@ -62,16 +62,22 @@ export default function Home() {
               premium gateway • server-side
             </p>
             <h1 className="mt-5 text-4xl font-semibold leading-[1.05] md:text-5xl">
-              Premium gateway
+              The premium gateway
               <br />
-              for server-side
-              <br />
-              conversions APIs.
+              <span className="text-[#c7b4ff]">
+                for server-side Conversions APIs.
+              </span>
             </h1>
             <p className="mt-5 text-base text-white/78 md:text-[15.5px]">
-              Managed sGTM benzeri kurulum ile Meta Conversions API ve GA4 Measurement
-              benzeri teslimatlarınızı tek panelden yönetin. Dedup, Consent Mode v2 uyumu
-              ve canlı log / debugger akışıyla birlikte.
+              Managed sGTM hosting with reliable{" "}
+              <span className="font-semibold text-white">
+                Meta Conversions API
+              </span>{" "}
+              &{" "}
+              <span className="font-semibold text-white">
+                GA4 Measurement Protocol
+              </span>{" "}
+              delivery — complete with dedup, Consent Mode v2, and a live log & debugger.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -110,7 +116,13 @@ export default function Home() {
               <div className="relative rounded-[25px] bg-gradient-to-br from-[#1a102a]/85 via-[#2c1d46]/40 to-[#1a0f28]/10 p-5 backdrop-blur-md">
                 {/* sağ üst küçük logo */}
                 <div className="pointer-events-none absolute right-4 top-4 h-6 w-6 opacity-90">
-                  <Image src="/logo.png" alt="Lunvi" width={24} height={24} className="h-6 w-6 object-contain" />
+                  <Image
+                    src="/logo.png"
+                    alt="Lunvi"
+                    width={24}
+                    height={24}
+                    className="h-6 w-6 object-contain"
+                  />
                 </div>
 
                 {/* sol neon ikon */}
@@ -129,7 +141,13 @@ export default function Home() {
             <div className="gradient-frame rounded-[28px] p-[1.4px]">
               <div className="relative rounded-[25px] bg-gradient-to-br from-[#071a1d]/85 via-[#0f2f33]/35 to-[#153f44]/5 p-5 backdrop-blur-md">
                 <div className="pointer-events-none absolute right-4 top-4 h-6 w-6 opacity-90">
-                  <Image src="/logo.png" alt="Lunvi" width={24} height={24} className="h-6 w-6 object-contain" />
+                  <Image
+                    src="/logo.png"
+                    alt="Lunvi"
+                    width={24}
+                    height={24}
+                    className="h-6 w-6 object-contain"
+                  />
                 </div>
 
                 <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-2xl bg-gradient-to-br from-[#b5fff1] to-[#2ed8bf] shadow-[0_0_18px_rgba(150,255,233,0.7)]">
@@ -147,7 +165,13 @@ export default function Home() {
             <div className="gradient-frame rounded-[28px] p-[1.4px]">
               <div className="relative rounded-[25px] bg-gradient-to-br from-[#210f22]/85 via-[#351231]/35 to-[#44204c]/5 p-5 backdrop-blur-md">
                 <div className="pointer-events-none absolute right-4 top-4 h-6 w-6 opacity-90">
-                  <Image src="/logo.png" alt="Lunvi" width={24} height={24} className="h-6 w-6 object-contain" />
+                  <Image
+                    src="/logo.png"
+                    alt="Lunvi"
+                    width={24}
+                    height={24}
+                    className="h-6 w-6 object-contain"
+                  />
                 </div>
 
                 <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-2xl bg-gradient-to-br from-[#ffe3b6] to-[#ff7dc7] shadow-[0_0_18px_rgba(255,150,210,0.6)]">
@@ -163,7 +187,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* gradient border animasyonu – firstbase tarzı */}
+        {/* gradient border animasyonu – pill tarzı */}
         <style jsx>{`
           @keyframes barShift {
             0% {
@@ -177,12 +201,7 @@ export default function Home() {
             }
           }
           .gradient-frame {
-            background: linear-gradient(
-              90deg,
-              #4e8df5 0%,
-              #be63ff 50%,
-              #69b5ff 100%
-            );
+            background: linear-gradient(90deg, #4e8df5 0%, #be63ff 50%, #69b5ff 100%);
             background-size: 180% 180%;
             animation: barShift 7s ease-in-out infinite;
           }
