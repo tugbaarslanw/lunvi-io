@@ -3,43 +3,39 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#050818] text-white">
-      {/* NAVBAR */}
-      <header className="fixed top-0 inset-x-0 z-50 h-[65px] bg-gradient-to-r from-[#191535] via-[#201b44] to-[#090b16] border-b border-white/5 backdrop-blur">
-        <div className="mx-auto flex h-full w-full max-w-6xl items-center justify-between px-4 lg:px-0">
-          {/* logo */}
-          <div className="flex items-center gap-3">
+    <div className="min-h-screen bg-[#060815] text-white">
+      {/* HEADER */}
+      <header className="sticky top-0 z-40 border-b border-white/5 bg-gradient-to-r from-[#5627a5] via-[#4f2f8f] to-[#332044]/90 backdrop-blur">
+        <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 md:h-16 md:px-6">
+          <div className="flex items-center gap-2">
             <Image
               src="/logo.png"
               alt="Lunvi"
-              width={110}
-              height={40}
+              width={90}
+              height={32}
               className="h-8 w-auto"
-              priority
             />
-            <span className="rounded-full bg-white/5 px-3 py-1 text-xs tracking-[0.3em] uppercase text-slate-100/70">
-              lunvi.io
+            <span className="rounded-full bg-white/5 px-3 py-1 text-xs tracking-[0.35em] text-white/80">
+              L U N V I . I O
             </span>
           </div>
-
-          {/* menu */}
-          <nav className="flex items-center gap-6">
-            <button className="text-sm text-slate-100/85 hover:text-white transition">
+          <nav className="flex items-center gap-2 text-sm">
+            <button className="rounded-full px-3 py-1 text-white/80 hover:bg-white/5">
               Product
             </button>
-            <button className="text-sm text-slate-100/85 hover:text-white transition">
+            <button className="rounded-full px-3 py-1 text-white/80 hover:bg-white/5">
               Solutions
             </button>
-            <button className="text-sm text-slate-100/85 hover:text-white transition">
+            <button className="rounded-full px-3 py-1 text-white/80 hover:bg-white/5">
               Integrations
             </button>
-            <button className="text-sm text-slate-100/85 hover:text-white transition">
+            <button className="rounded-full px-3 py-1 text-white/80 hover:bg-white/5">
               Pricing
             </button>
-            <button className="rounded-full border border-white/10 bg-white/5 px-5 py-1.5 text-sm text-white/90 hover:bg-white/10 transition">
+            <button className="rounded-full bg-white/5 px-5 py-1 text-white">
               Docs
             </button>
-            <button className="rounded-full bg-gradient-to-r from-[#a855f7] via-[#8b5cf6] to-[#6366f1] px-6 py-2 text-sm font-medium shadow-[0_15px_35px_rgba(115,103,255,0.35)] hover:brightness-110 transition">
+            <button className="rounded-full bg-gradient-to-r from-[#b946ff] to-[#6f54ff] px-6 py-1 text-sm font-medium text-white shadow-[0_0_25px_rgba(185,70,255,0.55)] transition hover:brightness-110">
               Start Demo
             </button>
           </nav>
@@ -47,202 +43,188 @@ export default function Home() {
       </header>
 
       {/* HERO */}
-      <main className="pt-[65px]">
-        <section className="relative overflow-hidden">
-          {/* background glow */}
-          <div
-            aria-hidden
-            className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(150,106,255,0.4),_transparent_55%)]"
-          />
-          <div
-            aria-hidden
-            className="pointer-events-none absolute -right-40 top-40 h-96 w-96 rounded-full bg-[radial-gradient(circle,_rgba(42,252,255,0.25),_transparent_60%)] blur-3xl"
-          />
+      <main className="mx-auto flex max-w-6xl flex-col gap-10 px-4 pb-24 pt-16 md:flex-row md:px-6">
+        {/* LEFT */}
+        <div className="flex-1">
+          <p className="text-xs font-medium tracking-[0.35em] text-white/50">
+            PREMIUM GATEWAY • SERVER-SIDE
+          </p>
 
-          <div className="relative mx-auto flex w-full max-w-6xl flex-col gap-12 px-4 py-16 lg:flex-row lg:px-0">
-            {/* LEFT */}
-            <div className="flex-1">
-              <p className="text-xs font-medium tracking-[0.35em] text-slate-100/65 uppercase mb-6">
-                Premium Gateway · Server-side
-              </p>
+          {/* başlık */}
+          <h1 className="mt-4 text-4xl font-bold leading-tight text-white md:text-5xl">
+            The premium gateway
+            <br />
+            for{" "}
+            <span className="text-[#a95aff]">
+              server-side
+              <br />
+              Conversions APIs.
+            </span>
+          </h1>
 
-              {/* title */}
-              <h1 className="text-4xl leading-tight font-semibold md:text-5xl space-y-1">
-                <span className="block text-white">The premium gateway</span>
-                <span className="block text-white">
-                  for <span className="text-[#a855f7]">server-side</span>
+          {/* alt metin */}
+          <p className="mt-6 max-w-xl text-sm leading-relaxed text-white/70">
+            Managed sGTM hosting with reliable{" "}
+            <span className="font-semibold text-white">
+              Meta Conversions API
+            </span>{" "}
+            &{" "}
+            <span className="font-semibold text-white">
+              GA4 Measurement Protocol
+            </span>{" "}
+            delivery — complete with dedup, Consent Mode v2, and a live log &
+            debugger.
+          </p>
+
+          {/* CTA */}
+          <div className="mt-6 flex gap-4">
+            <button className="rounded-full bg-white px-6 py-2 text-sm font-medium text-black">
+              Start Demo
+            </button>
+            <button className="rounded-full border border-white/10 bg-white/0 px-6 py-2 text-sm text-white hover:bg-white/5">
+              See Pricing
+            </button>
+          </div>
+
+          {/* badges */}
+          <div className="mt-6 flex flex-wrap gap-3">
+            {["EU Hosting", "GDPR / KVKK", "99.9% uptime", "Consent Mode v2"].map(
+              (item) => (
+                <span
+                  key={item}
+                  className="rounded-full bg-white/5 px-4 py-1 text-xs text-white/80"
+                >
+                  {item}
                 </span>
-                <span className="block text-[#a855f7]">
-                  Conversions APIs
-                  <span className="text-white">.</span>
+              )
+            )}
+          </div>
+
+          {/* optimized for */}
+          <div className="mt-8">
+            <p className="text-[0.55rem] tracking-[0.35em] text-white/40">
+              OPTIMIZED FOR
+            </p>
+            <div className="mt-3 flex flex-wrap gap-3">
+              {["Meta CAPI", "GA4", "TikTok", "Google Ads"].map((item) => (
+                <span
+                  key={item}
+                  className="rounded-md bg-white/5 px-4 py-1 text-xs text-white/90"
+                >
+                  {item}
                 </span>
-              </h1>
-
-              {/* subtext */}
-              <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-slate-200/80">
-                Managed sGTM hosting with reliable{" "}
-                <span className="font-semibold text-white">
-                  Meta Conversions API
-                </span>{" "}
-                &{" "}
-                <span className="font-semibold text-white">
-                  GA4 Measurement Protocol
-                </span>{" "}
-                delivery — complete with dedup, Consent Mode v2, and a live log
-                & debugger.
-              </p>
-
-              {/* CTA */}
-              <div className="mt-8 flex flex-wrap items-center gap-3">
-                <button className="rounded-full bg-white px-6 py-2 text-sm font-semibold text-[#0b0d16] shadow-md hover:shadow-lg transition">
-                  Start Demo
-                </button>
-                <button className="rounded-full border border-white/15 bg-white/5 px-5 py-2 text-sm text-white/85 hover:bg-white/10 transition">
-                  See Pricing
-                </button>
-              </div>
-
-              {/* chips */}
-              <div className="mt-7 flex flex-wrap gap-3">
-                {["EU Hosting", "GDPR / KVKK", "99.9% uptime", "Consent Mode v2"].map(
-                  (item) => (
-                    <span
-                      key={item}
-                      className="rounded-full bg-white/5 px-4 py-1 text-xs text-slate-100/75 border border-white/5"
-                    >
-                      {item}
-                    </span>
-                  )
-                )}
-              </div>
-
-              {/* optimized */}
-              <div className="mt-8">
-                <p className="text-[10px] tracking-[0.4em] uppercase text-slate-100/50 mb-3">
-                  Optimized for
-                </p>
-                <div className="flex gap-3">
-                  {["Meta CAPI", "GA4", "TikTok", "Google Ads"].map((item) => (
-                    <span
-                      key={item}
-                      className="rounded-md bg-white/5 px-3 py-1 text-xs text-slate-100/80 border border-white/5"
-                    >
-                      {item}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {/* RIGHT – glass cards with neon border */}
-            <div className="flex w-full flex-col gap-5 lg:w-[420px]">
-              {/* CARD 1 */}
-              <div className="relative rounded-[30px] bg-[linear-gradient(110deg,#5b5bff_0%,#ff69f7_100%)] p-[1.5px]">
-                <div className="relative rounded-[28px] bg-[#060918]/70 backdrop-blur-md border border-white/5 px-7 py-6 flex gap-5 min-h-[145px]">
-                  {/* neon icon */}
-                  <div className="mt-1 h-14 w-14 rounded-[1.2rem] bg-[radial-gradient(circle_at_10%_10%,#ffffff,_#8245ff_55%,rgba(130,69,255,0)_70%)] flex items-center justify-center shadow-[0_0_25px_rgba(130,69,255,0.85)]">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-7 w-7 text-white/90"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.6"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M5 12h4l3 6 3-12 2 6h2" />
-                    </svg>
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-base font-semibold">Key capabilities</p>
-                    <p className="text-sm text-slate-100/75 mt-1 leading-relaxed">
-                      Custom domain (CNAME), managed SSL, regional deploy and
-                      real-time delivery metrics.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* CARD 2 */}
-              <div className="relative rounded-[30px] bg-[linear-gradient(120deg,#2efcff_0%,#7b5cff_55%,#ff66c4_100%)] p-[1.5px]">
-                <div className="relative rounded-[28px] bg-[#060918]/70 backdrop-blur-md border border-white/5 px-7 py-6 flex gap-5 min-h-[145px]">
-                  {/* neon icon */}
-                  <div className="mt-1 h-14 w-14 rounded-[1.2rem] bg-[radial-gradient(circle_at_10%_10%,#ffffff,_#35ffe1_60%,rgba(53,255,225,0)_75%)] flex items-center justify-center shadow-[0_0_25px_rgba(53,255,225,0.75)]">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-7 w-7 text-[#020617]"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.6"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M4 7h16" />
-                      <path d="M4 12h10" />
-                      <path d="M4 17h7" />
-                    </svg>
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-base font-semibold">Use cases</p>
-                    <p className="text-sm text-slate-100/75 mt-1 leading-relaxed">
-                      E-commerce (Purchase/ATC), lead enrichment, agency
-                      multi-tenant presets ready to go.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* CARD 3 */}
-              <div className="relative rounded-[30px] bg-[linear-gradient(120deg,#ff4d8a_0%,#b026ff_55%,#4f0aff_100%)] p-[1.5px]">
-                <div className="relative rounded-[28px] bg-[radial-gradient(circle_at_10%_10%,rgba(255,176,190,0.3),rgba(92,0,84,0.35)_55%,rgba(38,0,58,0.5)_100%)] backdrop-blur-md border border-white/5 px-7 py-6 flex gap-5 min-h-[145px]">
-                  {/* neon icon */}
-                  <div className="mt-1 h-14 w-14 rounded-[1.2rem] bg-[radial-gradient(circle_at_10%_10%,#fff0d8,_#ff6a8f_60%,rgba(255,153,106,0)_75%)] flex items-center justify-center shadow-[0_0_25px_rgba(255,106,160,0.75)]">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-7 w-7 text-white/90"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.6"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M20 13V7a2 2 0 0 0-2-2h-4" />
-                      <path d="M4 11v6a2 2 0 0 0 2 2h4" />
-                      <path d="M9 15h.01" />
-                      <path d="M15 9h.01" />
-                      <path d="m3 3 18 18" />
-                    </svg>
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-base font-semibold">Health at a glance</p>
-                    <p className="text-sm text-slate-100/80 mt-1 leading-relaxed">
-                      Match quality ↑ · Dedup rate 97% · Last-24h error &lt; 0.5% ·
-                      P95 latency 180ms.
-                    </p>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
-        </section>
+        </div>
 
-        {/* PRODUCT SECTION – daha aşağıda */}
-        <section className="mx-auto w-full max-w-6xl px-4 lg:px-0 pb-16 pt-40">
-          <h2 className="text-lg font-semibold mb-2">Product</h2>
-          <p className="text-sm text-slate-100/55 max-w-2xl">
-            Buraya lunvi.io hattında çalışacak endpoint, workflow ve logging
-            bölümlerini ekleyebilirsin. Üstteki hero ile aynı koyu mor temayı
-            koruduk.
-          </p>
-        </section>
+        {/* RIGHT – CAM KUTULAR */}
+        <div className="flex w-full max-w-sm flex-col gap-4 md:w-[380px]">
+            {/* 1. kutu */}
+            <div className="relative overflow-hidden rounded-[1.9rem] border border-white/5 bg-gradient-to-r from-[#110b2f]/40 via-[#1c1f33]/40 to-[#0d1829]/40 px-6 py-6 backdrop-blur">
+              <div className="pointer-events-none absolute inset-0 rounded-[1.9rem] border-[2.5px] border-transparent bg-[linear-gradient(120deg,#4d60ff,rgba(0,0,0,0),#d186ff)] [mask:linear-gradient(#000_0_0)_content-box,linear-gradient(#000_0_0)] [mask-composite:exclude] p-[1.5px]" />
+              <div className="flex items-start gap-4">
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-b from-[#965dff] via-[#6e45ff] to-[#c379ff] shadow-[0_0_30px_rgba(150,93,255,0.5)]">
+                  {/* icon */}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-7 w-7 text-white"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                  >
+                    <path d="M4 18 10 6l4 8 2-4 4 8" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-base font-semibold">Key capabilities</h3>
+                  <p className="mt-1 text-sm text-white/70">
+                    Custom domain (CNAME), managed SSL, regional deploy and
+                    real-time delivery metrics.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-        <footer className="py-8 text-center text-xs text-slate-100/40 border-t border-white/5">
-          © 2025 lunvi.io — separate from lunvilabs.com
-        </footer>
+            {/* 2. kutu */}
+            <div className="relative overflow-hidden rounded-[1.9rem] border border-white/5 bg-gradient-to-r from-[#072830]/35 via-[#0c2e42]/40 to-[#2a0f34]/40 px-6 py-6 backdrop-blur">
+              <div className="pointer-events-none absolute inset-0 rounded-[1.9rem] border-[2.5px] border-transparent bg-[linear-gradient(120deg,#00ffe7,rgba(0,0,0,0),#a969ff)] [mask:linear-gradient(#000_0_0)_content-box,linear-gradient(#000_0_0)] [mask-composite:exclude] p-[1.5px]" />
+              <div className="flex items-start gap-4">
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-b from-[#4df6cf] via-[#00d5ff] to-[#17a4ff] shadow-[0_0_30px_rgba(77,246,207,0.45)]">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6 text-[#02121a]"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                  >
+                    <path d="M6 7h12M6 12h7M6 17h4" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-base font-semibold">Use cases</h3>
+                  <p className="mt-1 text-sm text-white/70">
+                    E-commerce (Purchase/ATC), lead enrichment, agency
+                    multi-tenant presets ready to go.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* 3. kutu – sadece bunu yumuşattım */}
+            <div className="relative overflow-hidden rounded-[1.9rem] border border-white/5 bg-gradient-to-r from-[#321129]/35 via-[#4a1030]/55 to-[#110616]/35 px-6 py-6 backdrop-blur">
+              {/* neon şerit (stape / firstbase tarzı) */}
+              <div className="pointer-events-none absolute inset-0 rounded-[1.9rem] border-[2.5px] border-transparent bg-[linear-gradient(130deg,#ff8fb1,rgba(0,0,0,0),#c16fff)] [mask:linear-gradient(#000_0_0)_content-box,linear-gradient(#000_0_0)] [mask-composite:exclude] p-[1.5px]" />
+              <div className="flex items-start gap-4">
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-b from-[#ffb995] via-[#ff6f7d] to-[#c026d3] shadow-[0_0_30px_rgba(255,111,125,0.55)]">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6 text-white"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                  >
+                    <path
+                      d="M9 19c-3 0-5-2.5-5-6s2-6 5-6"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M15 5c3 0 5 2.5 5 6s-2 6-5 6c-1.5 0-2.7-.6-3.5-1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path d="m9 11 2 2-2 2" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-base font-semibold">Health at a glance</h3>
+                  <p className="mt-1 text-sm text-white/70">
+                    Match quality ↑ • Dedup rate 97% • Last-24h error &lt; 0.5% •
+                    P95 latency 180ms.
+                  </p>
+                </div>
+              </div>
+            </div>
+        </div>
       </main>
+
+      {/* aşağıdaki "Product" bölümünü bilinçli olarak biraz aşağıda bırakıyoruz */}
+      <section className="mt-10 bg-transparent pb-16">
+        <div className="mx-auto max-w-6xl px-4 md:px-6">
+          {/* boşluk: hero altında görünmez olsun diye ekstra padding */}
+          <div className="pt-10" />
+          <h2 className="text-lg font-semibold text-white">Product</h2>
+          <p className="mt-2 max-w-2xl text-sm text-white/60">
+            Buraya lunvi.io hattında çalışacak endpoint, workflow ve logging
+            bölümlerini ekleyebilirsin. Üstteki mor hero ile aynı koyu mor
+            temayı koruduk.
+          </p>
+        </div>
+      </section>
     </div>
   );
 }
