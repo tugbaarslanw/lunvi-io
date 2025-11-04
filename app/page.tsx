@@ -185,7 +185,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* PRODUCT SECTION - daha aşağıda */}
+        {/* PRODUCT SECTION */}
         <section className="mx-auto w-full max-w-6xl px-4 lg:px-0 pb-16 pt-40">
           <h2 className="text-lg font-semibold mb-2">Product</h2>
           <p className="text-sm text-slate-100/55 max-w-2xl">
