@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#050818] text-white">
-      {/* NAVBAR (madgicx style) */}
+      {/* NAVBAR */}
       <header className="fixed top-0 inset-x-0 z-50 h-[65px] bg-gradient-to-r from-[#191535] via-[#201b44] to-[#090b16] border-b border-white/5 backdrop-blur">
         <div className="mx-auto flex h-full w-full max-w-6xl items-center justify-between px-4 lg:px-0">
           {/* logo */}
@@ -49,7 +49,7 @@ export default function Home() {
       {/* HERO */}
       <main className="pt-[65px]">
         <section className="relative overflow-hidden">
-          {/* soft glow arka plan */}
+          {/* background glow */}
           <div
             aria-hidden
             className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(150,106,255,0.4),_transparent_55%)]"
@@ -60,27 +60,25 @@ export default function Home() {
           />
 
           <div className="relative mx-auto flex w-full max-w-6xl flex-col gap-12 px-4 py-16 lg:flex-row lg:px-0">
-            {/* LEFT SIDE */}
+            {/* LEFT */}
             <div className="flex-1">
               <p className="text-xs font-medium tracking-[0.35em] text-slate-100/65 uppercase mb-6">
                 Premium Gateway · Server-side
               </p>
 
-              {/* başlık 3 satır */}
+              {/* title */}
               <h1 className="text-4xl leading-tight font-semibold md:text-5xl">
                 <span className="block text-white">
                   The premium gateway
                 </span>
-                <span className="block bg-gradient-to-r from-[#a855f7] via-[#8b5cf6] to-[#6366f1] bg-clip-text text-transparent">
-                  for server-side
-                </span>
+                <span className="block text-white">for server-side</span>
                 <span className="block bg-gradient-to-r from-[#a855f7] via-[#8b5cf6] to-[#6366f1] bg-clip-text text-transparent">
                   Conversions APIs
                   <span className="text-white">.</span>
                 </span>
               </h1>
 
-              {/* alt metin aynı */}
+              {/* subtext */}
               <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-slate-200/80">
                 Managed sGTM hosting with reliable{" "}
                 <span className="font-semibold text-white">
@@ -94,7 +92,7 @@ export default function Home() {
                 & debugger.
               </p>
 
-              {/* CTA buttons */}
+              {/* CTA */}
               <div className="mt-8 flex flex-wrap items-center gap-3">
                 <button className="rounded-full bg-white px-6 py-2 text-sm font-semibold text-[#0b0d16] shadow-md hover:shadow-lg transition">
                   Start Demo
@@ -104,7 +102,7 @@ export default function Home() {
                 </button>
               </div>
 
-              {/* chipler */}
+              {/* chips */}
               <div className="mt-7 flex flex-wrap gap-3">
                 {["EU Hosting", "GDPR / KVKK", "99.9% uptime", "Consent Mode v2"].map(
                   (item) => (
@@ -136,7 +134,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* RIGHT SIDE – neon glass cards */}
+            {/* RIGHT – glass cards */}
             <div className="flex w-full flex-col gap-5 lg:w-[395px]">
               {/* CARD 1 */}
               <div className="relative rounded-[26px]">
@@ -186,8 +184,8 @@ export default function Home() {
           </div>
         </section>
 
-        {/* alt blok – biraz aşağı aldım */}
-        <section className="mx-auto w-full max-w-6xl px-4 lg:px-0 pb-16 pt-10">
+        {/* PRODUCT SECTION - aşağı kaydırdım */}
+        <section className="mx-auto w-full max-w-6xl px-4 lg:px-0 pb-16 pt-28">
           <h2 className="text-lg font-semibold mb-2">Product</h2>
           <p className="text-sm text-slate-100/55 max-w-2xl">
             Buraya lunvi.io hattında çalışacak endpoint, workflow ve logging
