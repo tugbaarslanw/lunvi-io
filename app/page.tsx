@@ -135,15 +135,15 @@ export default function Home() {
             </div>
 
             {/* RIGHT – glass cards with neon border */}
-            <div className="flex w-full flex-col gap-5 lg:w-[395px]">
+            <div className="flex w-full flex-col gap-5 lg:w-[420px]">
               {/* CARD 1 */}
               <div className="relative rounded-[30px] bg-[linear-gradient(110deg,#5b5bff_0%,#ff69f7_100%)] p-[1.5px]">
-                <div className="relative rounded-[28px] bg-[#060918]/70 backdrop-blur-md border border-white/5 px-6 py-5 flex gap-4 min-h-[140px]">
+                <div className="relative rounded-[28px] bg-[#060918]/70 backdrop-blur-md border border-white/5 px-7 py-6 flex gap-5 min-h-[145px]">
                   {/* neon icon */}
-                  <div className="mt-1 h-12 w-12 rounded-2xl bg-[radial-gradient(circle_at_10%_10%,#ffffff,_#8245ff_55%,rgba(130,69,255,0)_70%)] flex items-center justify-center shadow-[0_0_25px_rgba(130,69,255,0.85)]">
+                  <div className="mt-1 h-14 w-14 rounded-[1.2rem] bg-[radial-gradient(circle_at_10%_10%,#ffffff,_#8245ff_55%,rgba(130,69,255,0)_70%)] flex items-center justify-center shadow-[0_0_25px_rgba(130,69,255,0.85)]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6 text-white/90"
+                      className="h-7 w-7 text-white/90"
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
@@ -154,7 +154,7 @@ export default function Home() {
                       <path d="M5 12h4l3 6 3-12 2 6h2" />
                     </svg>
                   </div>
-                  <div>
+                  <div className="flex-1">
                     <p className="text-base font-semibold">Key capabilities</p>
                     <p className="text-sm text-slate-100/75 mt-1 leading-relaxed">
                       Custom domain (CNAME), managed SSL, regional deploy and
@@ -166,12 +166,12 @@ export default function Home() {
 
               {/* CARD 2 */}
               <div className="relative rounded-[30px] bg-[linear-gradient(120deg,#2efcff_0%,#7b5cff_55%,#ff66c4_100%)] p-[1.5px]">
-                <div className="relative rounded-[28px] bg-[#060918]/70 backdrop-blur-md border border-white/5 px-6 py-5 flex gap-4 min-h-[140px]">
+                <div className="relative rounded-[28px] bg-[#060918]/70 backdrop-blur-md border border-white/5 px-7 py-6 flex gap-5 min-h-[145px]">
                   {/* neon icon */}
-                  <div className="mt-1 h-12 w-12 rounded-2xl bg-[radial-gradient(circle_at_10%_10%,#ffffff,_#35ffe1_60%,rgba(53,255,225,0)_75%)] flex items-center justify-center shadow-[0_0_25px_rgba(53,255,225,0.75)]">
+                  <div className="mt-1 h-14 w-14 rounded-[1.2rem] bg-[radial-gradient(circle_at_10%_10%,#ffffff,_#35ffe1_60%,rgba(53,255,225,0)_75%)] flex items-center justify-center shadow-[0_0_25px_rgba(53,255,225,0.75)]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6 text-[#020617]"
+                      className="h-7 w-7 text-[#020617]"
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
@@ -184,7 +184,7 @@ export default function Home() {
                       <path d="M4 17h7" />
                     </svg>
                   </div>
-                  <div>
+                  <div className="flex-1">
                     <p className="text-base font-semibold">Use cases</p>
                     <p className="text-sm text-slate-100/75 mt-1 leading-relaxed">
                       E-commerce (Purchase/ATC), lead enrichment, agency
@@ -195,13 +195,13 @@ export default function Home() {
               </div>
 
               {/* CARD 3 */}
-              <div className="relative rounded-[30px] bg-[linear-gradient(120deg,#ffe29f_0%,#ffa99f_55%,#ff5dcd_100%)] p-[1.5px]">
-                <div className="relative rounded-[28px] bg-[#060918]/70 backdrop-blur-md border border-white/5 px-6 py-5 flex gap-4 min-h-[140px]">
+              <div className="relative rounded-[30px] bg-[linear-gradient(120deg,#ff4d8a_0%,#b026ff_55%,#4f0aff_100%)] p-[1.5px]">
+                <div className="relative rounded-[28px] bg-[radial-gradient(circle_at_10%_10%,rgba(255,176,190,0.3),rgba(92,0,84,0.35)_55%,rgba(38,0,58,0.5)_100%)] backdrop-blur-md border border-white/5 px-7 py-6 flex gap-5 min-h-[145px]">
                   {/* neon icon */}
-                  <div className="mt-1 h-12 w-12 rounded-2xl bg-[radial-gradient(circle_at_10%_10%,#fff0d8,_#ff996a_60%,rgba(255,153,106,0)_75%)] flex items-center justify-center shadow-[0_0_25px_rgba(255,153,106,0.75)]">
+                  <div className="mt-1 h-14 w-14 rounded-[1.2rem] bg-[radial-gradient(circle_at_10%_10%,#fff0d8,_#ff6a8f_60%,rgba(255,153,106,0)_75%)] flex items-center justify-center shadow-[0_0_25px_rgba(255,106,160,0.75)]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6 text-white/90"
+                      className="h-7 w-7 text-white/90"
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
@@ -216,9 +216,9 @@ export default function Home() {
                       <path d="m3 3 18 18" />
                     </svg>
                   </div>
-                  <div>
+                  <div className="flex-1">
                     <p className="text-base font-semibold">Health at a glance</p>
-                    <p className="text-sm text-slate-100/75 mt-1 leading-relaxed">
+                    <p className="text-sm text-slate-100/80 mt-1 leading-relaxed">
                       Match quality ↑ · Dedup rate 97% · Last-24h error &lt; 0.5% ·
                       P95 latency 180ms.
                     </p>
