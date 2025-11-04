@@ -109,7 +109,13 @@ export default function Home() {
           <div className="relative z-10 flex flex-1 flex-col gap-5 lg:max-w-sm">
             {/* kart 1 – mor */}
             <div className="neon-border-purple rounded-[28px] p-[1.5px]">
-              <div className="rounded-[24px] bg-[#120b22]/70 p-5 backdrop-blur-md">
+              <div className="relative rounded-[24px] bg-gradient-to-br from-[#1a102a]/90 via-[#2c1d46]/60 to-[#1a0f28]/50 p-5 backdrop-blur-md">
+                {/* sağ üst logo */}
+                <div className="pointer-events-none absolute right-4 top-4 h-6 w-6 opacity-90">
+                  <Image src="/logo.png" alt="Lunvi" width={24} height={24} className="h-6 w-6 object-contain" />
+                </div>
+
+                {/* sol renkli ikon */}
                 <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-2xl bg-gradient-to-br from-[#d9d3ff] to-[#7f71ff] shadow-[0_0_18px_rgba(190,177,255,0.7)]">
                   <span className="text-[12px] text-[#120b22] font-bold">●</span>
                 </div>
@@ -123,7 +129,12 @@ export default function Home() {
 
             {/* kart 2 – turkuaz/mavi */}
             <div className="neon-border-cyan rounded-[28px] p-[1.5px]">
-              <div className="rounded-[24px] bg-[#0d1721]/65 p-5 backdrop-blur-md">
+              <div className="relative rounded-[24px] bg-gradient-to-br from-[#071a1d]/90 via-[#0f2f33]/70 to-[#153f44]/50 p-5 backdrop-blur-md">
+                {/* sağ üst logo */}
+                <div className="pointer-events-none absolute right-4 top-4 h-6 w-6 opacity-90">
+                  <Image src="/logo.png" alt="Lunvi" width={24} height={24} className="h-6 w-6 object-contain" />
+                </div>
+
                 <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-2xl bg-gradient-to-br from-[#b5fff1] to-[#2ed8bf] shadow-[0_0_18px_rgba(150,255,233,0.7)]">
                   <span className="text-[12px] text-[#0d1721] font-bold">◆</span>
                 </div>
@@ -137,7 +148,12 @@ export default function Home() {
 
             {/* kart 3 – güçlü mor/pembe */}
             <div className="neon-border-magenta rounded-[28px] p-[1.5px]">
-              <div className="rounded-[24px] bg-[#1a0f1e]/65 p-5 backdrop-blur-md">
+              <div className="relative rounded-[24px] bg-gradient-to-br from-[#210f22]/90 via-[#351231]/65 to-[#44204c]/45 p-5 backdrop-blur-md">
+                {/* sağ üst logo */}
+                <div className="pointer-events-none absolute right-4 top-4 h-6 w-6 opacity-90">
+                  <Image src="/logo.png" alt="Lunvi" width={24} height={24} className="h-6 w-6 object-contain" />
+                </div>
+
                 <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-2xl bg-gradient-to-br from-[#ffe3b6] to-[#ff7dc7] shadow-[0_0_18px_rgba(255,150,210,0.6)]">
                   <span className="text-[12px] text-[#1a0f1e] font-bold">▲</span>
                 </div>
@@ -187,7 +203,7 @@ export default function Home() {
         <h2 className="text-lg font-semibold text-white/90">Product</h2>
         <p className="mt-2 max-w-2xl text-sm text-white/45">
           Buraya lunvi.io hattında çalışacak endpoint, workflow ve logging bölümlerini
-          ekleyebilirsin. Üstteki hero ile aynı koyu mor çizgide.
+          ekleyebilirsin.
         </p>
       </section>
 
