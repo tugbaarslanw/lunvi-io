@@ -50,7 +50,7 @@ export default function Home() {
 
       {/* HERO */}
       <section className="relative overflow-hidden bg-gradient-to-b from-[#492a91] via-[#352066] to-[#0b0714]">
-        {/* arka glowlar hafif */}
+        {/* arka glowlar */}
         <div className="pointer-events-none absolute -right-20 -top-24 h-56 w-56 rounded-full bg-[#9b83d9]/12 blur-2xl" />
         <div className="pointer-events-none absolute -left-40 top-12 h-[420px] w-[420px] rounded-full bg-[#805de3]/10 blur-3xl" />
         <div className="pointer-events-none absolute right-4 top-72 h-48 w-48 rounded-full bg-[#34d1be]/10 blur-2xl" />
@@ -61,22 +61,18 @@ export default function Home() {
             <p className="text-xs uppercase tracking-[0.35em] text-white/70">
               premium gateway • server-side
             </p>
+
+            {/* BAŞLIK tam senin istediğin gibi */}
             <h1 className="mt-5 text-4xl font-semibold leading-[1.05] md:text-5xl">
-              The premium gateway
-              <br />
-              <span className="text-[#c7b4ff]">
-                for server-side Conversions APIs.
-              </span>
+              <span className="text-white">The premium gateway </span>
+              <span className="text-[#c7b4ff]">for server-side Conversions APIs.</span>
             </h1>
+
+            {/* ALT PARAGRAF tam cümle */}
             <p className="mt-5 text-base text-white/78 md:text-[15.5px]">
               Managed sGTM hosting with reliable{" "}
-              <span className="font-semibold text-white">
-                Meta Conversions API
-              </span>{" "}
-              &{" "}
-              <span className="font-semibold text-white">
-                GA4 Measurement Protocol
-              </span>{" "}
+              <span className="font-semibold text-white">Meta Conversions API</span> &{" "}
+              <span className="font-semibold text-white">GA4 Measurement Protocol</span>{" "}
               delivery — complete with dedup, Consent Mode v2, and a live log & debugger.
             </p>
 
@@ -114,7 +110,6 @@ export default function Home() {
             {/* kart 1 */}
             <div className="gradient-frame rounded-[28px] p-[1.4px]">
               <div className="relative rounded-[25px] bg-gradient-to-br from-[#1a102a]/85 via-[#2c1d46]/40 to-[#1a0f28]/10 p-5 backdrop-blur-md">
-                {/* sağ üst küçük logo */}
                 <div className="pointer-events-none absolute right-4 top-4 h-6 w-6 opacity-90">
                   <Image
                     src="/logo.png"
@@ -125,7 +120,6 @@ export default function Home() {
                   />
                 </div>
 
-                {/* sol neon ikon */}
                 <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-2xl bg-gradient-to-br from-[#d9d3ff] to-[#7f71ff] shadow-[0_0_18px_rgba(190,177,255,0.7)]">
                   <span className="text-[12px] text-[#120b22] font-bold">●</span>
                 </div>
@@ -187,7 +181,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* gradient border animasyonu – pill tarzı */}
+        {/* gradient kenar animasyonu */}
         <style jsx>{`
           @keyframes barShift {
             0% {
