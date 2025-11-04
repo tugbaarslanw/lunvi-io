@@ -3,188 +3,197 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-[#050816] via-[#070b1f] to-[#0b1121] text-white">
-      {/* HEADER */}
-      <header className="sticky top-0 z-40 border-b border-white/5 bg-[#060918]/90 backdrop-blur-md">
-        <div className="mx-auto flex h-[68px] max-w-6xl items-center justify-between px-6">
+    <div className="min-h-screen bg-[#050818] text-white">
+      {/* NAVBAR */}
+      <header className="fixed top-0 inset-x-0 z-50 h-[65px] bg-gradient-to-r from-[#1a1535] via-[#211b48] to-[#090b16] border-b border-white/5 backdrop-blur">
+        <div className="mx-auto flex h-full w-full max-w-6xl items-center justify-between px-4 lg:px-0">
           {/* logo */}
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-3">
+            {/* logo.png dosyan public klasöründe olmalı */}
             <Image
               src="/logo.png"
               alt="Lunvi"
-              width={128}
+              width={110}
               height={40}
+              className="h-8 w-auto"
               priority
-              className="h-9 w-auto"
             />
-            <span className="rounded-full bg-white/5 px-3 py-1 text-[10px] uppercase tracking-[0.25em] text-white/45">
+            <span className="rounded-full bg-white/5 px-3 py-1 text-xs tracking-[0.3em] uppercase text-slate-100/70">
               lunvi.io
             </span>
           </div>
 
-          {/* nav */}
-          <div className="flex items-center gap-6">
-            <nav className="hidden items-center gap-5 text-sm text-white/80 md:flex">
-              <a href="#product" className="hover:text-white transition">
-                Product
-              </a>
-              <a href="#solutions" className="hover:text-white transition">
-                Solutions
-              </a>
-              <a href="#integrations" className="hover:text-white transition">
-                Integrations
-              </a>
-              <a href="#pricing" className="hover:text-white transition">
-                Pricing
-              </a>
-              <a
-                href="#docs"
-                className="rounded-full bg-white/5 px-4 py-1.5 text-xs hover:bg-white/10"
-              >
-                Docs
-              </a>
-            </nav>
-            <button className="rounded-full bg-[#5b5fff] px-5 py-2 text-xs font-semibold text-white shadow-[0_15px_40px_rgba(78,81,255,0.25)] hover:bg-[#6b6eff]">
+          {/* menu */}
+          <nav className="flex items-center gap-6">
+            <button className="text-sm text-slate-100/85 hover:text-white transition">
+              Product
+            </button>
+            <button className="text-sm text-slate-100/85 hover:text-white transition">
+              Solutions
+            </button>
+            <button className="text-sm text-slate-100/85 hover:text-white transition">
+              Integrations
+            </button>
+            <button className="text-sm text-slate-100/85 hover:text-white transition">
+              Pricing
+            </button>
+
+            {/* Docs ve Start Demo butonları */}
+            <button className="rounded-full border border-white/10 bg-white/5 px-5 py-1.5 text-sm text-white/90 hover:bg-white/10 transition">
+              Docs
+            </button>
+            <button className="rounded-full bg-gradient-to-r from-[#a855f7] via-[#8b5cf6] to-[#6366f1] px-6 py-2 text-sm font-medium shadow-[0_15px_35px_rgba(115,103,255,0.35)] hover:brightness-110 transition">
               Start Demo
             </button>
-          </div>
+          </nav>
         </div>
       </header>
 
       {/* HERO */}
-      <section className="relative overflow-hidden">
-        {/* madgicx vari arkaplan baloncukları */}
-        <div className="pointer-events-none absolute -right-10 top-10 h-64 w-64 rounded-full bg-[#4f46e5]/10 blur-3xl" />
-        <div className="pointer-events-none absolute left-[-120px] top-40 h-72 w-72 rounded-full bg-[#06b6d4]/10 blur-[120px]" />
-        <div className="pointer-events-none absolute right-[-120px] top-72 h-72 w-72 rounded-full bg-[#f97316]/5 blur-[110px]" />
-
-        <div className="mx-auto flex max-w-6xl flex-col gap-10 px-6 pb-16 pt-14 lg:flex-row">
-          {/* LEFT side */}
-          <div className="relative z-10 max-w-xl">
-            <p className="text-[11px] uppercase tracking-[0.5em] text-white/50">
-              premium gateway • server-side
-            </p>
-
-            {/* başlık, ikinci satır mor */}
-            <h1 className="mt-5 text-4xl font-semibold leading-[1.03] md:text-5xl">
-              <span className="text-white">The premium gateway </span>
-              <span className="block text-[#a3b3ff]">
-                for server-side Conversions APIs.
-              </span>
-            </h1>
-
-            {/* açıklama, vurgulu kelimelerle */}
-            <p className="mt-5 text-[15.5px] leading-relaxed text-white/80">
-              Managed sGTM hosting with reliable{" "}
-              <span className="font-semibold text-white">Meta Conversions API</span> &{" "}
-              <span className="font-semibold text-white">GA4 Measurement Protocol</span>{" "}
-              delivery — complete with dedup, Consent Mode v2, and a live log & debugger.
-            </p>
-
-            {/* CTA */}
-            <div className="mt-7 flex flex-wrap items-center gap-4">
-              <button className="rounded-full bg-white px-6 py-2.5 text-sm font-medium text-[#060918] shadow-[0_10px_35px_rgba(0,0,0,0.25)] hover:bg-white/95">
-                Start Demo
-              </button>
-              <button className="rounded-full border border-white/15 bg-white/5 px-6 py-2.5 text-sm text-white hover:bg-white/10">
-                See Pricing
-              </button>
-            </div>
-
-            {/* küçük rozetler */}
-            <div className="mt-7 flex flex-wrap gap-3 text-xs text-white/85">
-              <span className="rounded-full bg-white/5 px-3 py-1">EU Hosting</span>
-              <span className="rounded-full bg-white/5 px-3 py-1">GDPR / KVKK</span>
-              <span className="rounded-full bg-white/5 px-3 py-1">99.9% uptime</span>
-              <span className="rounded-full bg-white/5 px-3 py-1">Consent Mode v2</span>
-            </div>
-
-            {/* optimized */}
-            <div className="mt-8">
-              <p className="text-[10px] uppercase tracking-[0.4em] text-white/40">
-                optimized for
+      <main className="pt-[65px]">
+        <section className="relative overflow-hidden">
+          {/* arka plan blur şekiller */}
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(150,106,255,0.35),_transparent_55%)]"
+          />
+          <div
+            aria-hidden
+            className="pointer-events-none absolute -right-32 top-32 h-80 w-80 rounded-full bg-[radial-gradient(circle,_rgba(42,252,255,0.3),_transparent_60%)] blur-3xl"
+          />
+          <div className="relative mx-auto flex w-full max-w-6xl flex-col gap-12 px-4 py-16 lg:flex-row lg:px-0">
+            {/* LEFT SIDE */}
+            <div className="flex-1">
+              <p className="text-xs font-medium tracking-[0.35em] text-slate-100/65 uppercase mb-6">
+                Premium Gateway · Server-side
               </p>
-              <div className="mt-3 flex flex-wrap gap-4">
-                <span className="rounded-full bg-white/5 px-3 py-1 text-xs text-white/85">
-                  Meta CAPI
+
+              {/* Başlık iki renkli */}
+              <h1 className="text-4xl leading-tight font-semibold md:text-5xl">
+                <span className="block text-white">
+                  The premium gateway
                 </span>
-                <span className="rounded-full bg-white/5 px-3 py-1 text-xs text-white/85">
-                  GA4
+                <span className="block bg-gradient-to-r from-[#a855f7] via-[#8b5cf6] to-[#6366f1] bg-clip-text text-transparent">
+                  for server-side Conversions APIs.
                 </span>
-                <span className="rounded-full bg-white/5 px-3 py-1 text-xs text-white/85">
-                  TikTok
-                </span>
-                <span className="rounded-full bg-white/5 px-3 py-1 text-xs text-white/85">
-                  Google Ads
-                </span>
+              </h1>
+
+              {/* alt metin */}
+              <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-slate-200/80">
+                Managed sGTM hosting with reliable{" "}
+                <span className="font-semibold text-white">
+                  Meta Conversions API
+                </span>{" "}
+                &{" "}
+                <span className="font-semibold text-white">
+                  GA4 Measurement Protocol
+                </span>{" "}
+                delivery — complete with dedup, Consent Mode v2, and a live log
+                & debugger.
+              </p>
+
+              {/* CTA buttons */}
+              <div className="mt-8 flex flex-wrap items-center gap-3">
+                <button className="rounded-full bg-white px-6 py-2 text-sm font-semibold text-[#0b0d16] shadow-md hover:shadow-lg transition">
+                  Start Demo
+                </button>
+                <button className="rounded-full border border-white/15 bg-white/5 px-5 py-2 text-sm text-white/85 hover:bg-white/10 transition">
+                  See Pricing
+                </button>
+              </div>
+
+              {/* küçük chipler */}
+              <div className="mt-7 flex flex-wrap gap-3">
+                {["EU Hosting", "GDPR / KVKK", "99.9% uptime", "Consent Mode v2"].map(
+                  (item) => (
+                    <span
+                      key={item}
+                      className="rounded-full bg-white/5 px-4 py-1 text-xs text-slate-100/75 border border-white/5"
+                    >
+                      {item}
+                    </span>
+                  )
+                )}
+              </div>
+
+              {/* optimized for */}
+              <div className="mt-8">
+                <p className="text-[10px] tracking-[0.4em] uppercase text-slate-100/50 mb-3">
+                  Optimized for
+                </p>
+                <div className="flex gap-3">
+                  {["Meta CAPI", "GA4", "TikTok", "Google Ads"].map((item) => (
+                    <span
+                      key={item}
+                      className="rounded-md bg-white/5 px-3 py-1 text-xs text-slate-100/80 border border-white/5"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* RIGHT SIDE CARDS */}
+            <div className="flex w-full flex-col gap-5 lg:w-[380px]">
+              {/* 1 */}
+              <div className="rounded-3xl bg-white/5/0 border border-transparent bg-gradient-to-b from-white/10 via-white/5 to-white/0 p-[1px]">
+                <div className="rounded-3xl bg-[radial-gradient(circle_at_top,_rgba(164,124,255,0.35),_rgba(10,11,20,0.15))] border border-[#b496ff]/20 backdrop-blur-md p-5 flex gap-4">
+                  <div className="mt-1 h-9 w-9 rounded-2xl bg-gradient-to-b from-[#b496ff] to-[#6d4cff] shadow-[0_0_30px_rgba(180,150,255,0.65)]" />
+                  <div>
+                    <p className="text-sm font-semibold">Key capabilities</p>
+                    <p className="text-xs text-slate-100/70 mt-1">
+                      Custom domain (CNAME), managed SSL, regional deploys and
+                      real-time delivery metrics.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* 2 */}
+              <div className="rounded-3xl bg-white/5/0 border border-transparent bg-gradient-to-b from-white/10 via-white/5 to-white/0 p-[1px]">
+                <div className="rounded-3xl bg-[radial-gradient(circle_at_top,_rgba(69,252,255,0.32),_rgba(6,9,16,0.15))] border border-[#44f1ff]/25 backdrop-blur-md p-5 flex gap-4">
+                  <div className="mt-1 h-9 w-9 rounded-2xl bg-gradient-to-b from-[#6fffe9] to-[#00bcd4] shadow-[0_0_30px_rgba(76,255,220,0.65)]" />
+                  <div>
+                    <p className="text-sm font-semibold">Use cases</p>
+                    <p className="text-xs text-slate-100/70 mt-1">
+                      E-commerce events, lead enrichment, agency setups with
+                      ready multi-tenant presets.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* 3 */}
+              <div className="rounded-3xl bg-white/5/0 border border-transparent bg-gradient-to-b from-white/10 via-white/5 to-white/0 p-[1px]">
+                <div className="rounded-3xl bg-[radial-gradient(circle_at_top,_rgba(255,196,128,0.25),_rgba(5,8,18,0.15))] border border-[#ffb86b]/25 backdrop-blur-md p-5 flex gap-4">
+                  <div className="mt-1 h-9 w-9 rounded-2xl bg-gradient-to-b from-[#ffe29f] to-[#ffa99f] shadow-[0_0_30px_rgba(255,184,107,0.65)]" />
+                  <div>
+                    <p className="text-sm font-semibold">Health at a glance</p>
+                    <p className="text-xs text-slate-100/70 mt-1">
+                      Match quality ↑ · Dedup stable · Last-24h error &lt; 0.5% ·
+                      P95 latency optimized.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+        </section>
 
-          {/* RIGHT side – glass neon cards */}
-          <div className="relative z-10 flex flex-1 flex-col gap-5 lg:max-w-sm">
-            {/* card 1 */}
-            <div className="rounded-[28px] bg-gradient-to-r from-[#5b5fff] to-[#06b6d4] p-[1.6px] shadow-[0_10px_45px_rgba(91,95,255,0.12)]">
-              <div className="rounded-[26px] bg-[#060918]/80 p-5 backdrop-blur-xl">
-                <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-2xl bg-gradient-to-br from-[#cbd5ff] to-[#7e89ff] shadow-[0_0_18px_rgba(132,140,255,0.8)]">
-                  <span className="text-[11px] font-bold text-[#060918]">◆</span>
-                </div>
-                <h2 className="text-sm font-semibold">Key capabilities</h2>
-                <p className="mt-2 text-sm text-white/80">
-                  Custom domain (CNAME), managed SSL, bölgesel deploy ve gerçek zamanlı
-                  teslimat metrikleri.
-                </p>
-              </div>
-            </div>
+        {/* alt blok sadece boş kalsın */}
+        <section className="mx-auto w-full max-w-6xl px-4 lg:px-0 pb-16 pt-6">
+          <h2 className="text-lg font-semibold mb-2">Product</h2>
+          <p className="text-sm text-slate-100/55 max-w-2xl">
+            Buraya lunvi.io’nun product / endpoint / workflow / logging bölümlerini
+            ekleyeceğiz. Şimdilik hero ile uyumlu koyu arka planı koruduk.
+          </p>
+        </section>
 
-            {/* card 2 */}
-            <div className="rounded-[28px] bg-gradient-to-r from-[#06b6d4] via-[#4f46e5] to-[#06b6d4] p-[1.6px] shadow-[0_10px_40px_rgba(6,182,212,0.12)]">
-              <div className="rounded-[26px] bg-[#060918]/80 p-5 backdrop-blur-xl">
-                <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-2xl bg-gradient-to-br from-[#b4fff1] to-[#2dd4bf] shadow-[0_0_18px_rgba(90,255,223,0.8)]">
-                  <span className="text-[11px] font-bold text-[#020617]">●</span>
-                </div>
-                <h2 className="text-sm font-semibold">Use cases</h2>
-                <p className="mt-2 text-sm text-white/80">
-                  E-commerce event’leri, lead enrichment, ajans çoklu-tenant kurulumları
-                  için hazır preset’ler.
-                </p>
-              </div>
-            </div>
-
-            {/* card 3 */}
-            <div className="rounded-[28px] bg-gradient-to-r from-[#f97316] via-[#b24bf3] to-[#6366f1] p-[1.6px] shadow-[0_10px_40px_rgba(249,115,22,0.12)]">
-              <div className="rounded-[26px] bg-[#060918]/80 p-5 backdrop-blur-xl">
-                <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-2xl bg-gradient-to-br from-[#ffe1b6] to-[#ff7dc7] shadow-[0_0_16px_rgba(255,141,185,0.8)]">
-                  <span className="text-[11px] font-bold text-[#1f1725]">▲</span>
-                </div>
-                <h2 className="text-sm font-semibold">Health at a glance</h2>
-                <p className="mt-2 text-sm text-white/80">
-                  Match quality ↑ · Dedup oranı yüksek · Son 24h error düşüklüğü · P95
-                  latency stabil.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ALT BLOK */}
-      <section
-        id="product"
-        className="mx-auto w-full max-w-6xl px-6 py-12 text-sm text-white/60"
-      >
-        <h2 className="text-lg font-semibold text-white/90">Product</h2>
-        <p className="mt-2 max-w-2xl">
-          Buraya lunvi.io hattında çalışacak endpoint, workflow ve logging bölümlerini
-          ekleyebilirsin. Üstteki hero bölümü madgicx benzeri koyu mavi-mor temaya,
-          sağdaki kutular ise bizim neon/cam stilimize göre tasarlandı.
-        </p>
-      </section>
-
-      <footer className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 pb-8 text-xs text-white/20">
-        <span>© {new Date().getFullYear()} lunvi.io</span>
-        <span>Separate from lunvilabs.com</span>
-      </footer>
-    </main>
+        <footer className="py-8 text-center text-xs text-slate-100/40 border-t border-white/5">
+          © 2025 lunvi.io — separate from lunvilabs.com
+        </footer>
+      </main>
+    </div>
   );
 }
