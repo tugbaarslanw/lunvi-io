@@ -66,17 +66,21 @@ export default function Home() {
                 Premium Gateway · Server-side
               </p>
 
-              {/* 2 renkli başlık */}
+              {/* başlık 3 satır */}
               <h1 className="text-4xl leading-tight font-semibold md:text-5xl">
                 <span className="block text-white">
                   The premium gateway
                 </span>
                 <span className="block bg-gradient-to-r from-[#a855f7] via-[#8b5cf6] to-[#6366f1] bg-clip-text text-transparent">
-                  for server-side Conversions APIs.
+                  for server-side
+                </span>
+                <span className="block bg-gradient-to-r from-[#a855f7] via-[#8b5cf6] to-[#6366f1] bg-clip-text text-transparent">
+                  Conversions APIs
+                  <span className="text-white">.</span>
                 </span>
               </h1>
 
-              {/* alt metin */}
+              {/* alt metin aynı */}
               <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-slate-200/80">
                 Managed sGTM hosting with reliable{" "}
                 <span className="font-semibold text-white">
@@ -136,9 +140,7 @@ export default function Home() {
             <div className="flex w-full flex-col gap-5 lg:w-[395px]">
               {/* CARD 1 */}
               <div className="relative rounded-[26px]">
-                {/* neon border */}
                 <div className="pointer-events-none absolute inset-0 rounded-[26px] bg-[linear-gradient(120deg,#c56fff,rgba(199,118,255,0)_45%),linear-gradient(300deg,#42e1ff,rgba(66,225,255,0)_40%)] opacity-100" />
-                {/* inner glass */}
                 <div className="relative rounded-[22px] bg-[#060918]/60 backdrop-blur-md border border-white/5 px-6 py-5 flex gap-4 min-h-[140px]">
                   <div className="mt-1 h-11 w-11 rounded-2xl bg-[linear-gradient(160deg,#8245ff,#4a2bd6)] shadow-[0_0_25px_rgba(128,90,255,0.85)]" />
                   <div>
@@ -153,7 +155,6 @@ export default function Home() {
 
               {/* CARD 2 */}
               <div className="relative rounded-[26px]">
-                {/* neon border turkuaz */}
                 <div className="pointer-events-none absolute inset-0 rounded-[26px] bg-[linear-gradient(120deg,#40e0ff,rgba(64,224,255,0)_40%),linear-gradient(320deg,#a971ff,rgba(169,113,255,0)_35%)] opacity-100" />
                 <div className="relative rounded-[22px] bg-[#060918]/60 backdrop-blur-md border border-white/5 px-6 py-5 flex gap-4 min-h-[140px]">
                   <div className="mt-1 h-11 w-11 rounded-2xl bg-[linear-gradient(160deg,#5efcff,#0cbad2)] shadow-[0_0_25px_rgba(71,246,255,0.75)]" />
@@ -169,7 +170,6 @@ export default function Home() {
 
               {/* CARD 3 */}
               <div className="relative rounded-[26px]">
-                {/* neon border warm */}
                 <div className="pointer-events-none absolute inset-0 rounded-[26px] bg-[linear-gradient(120deg,#ffc78c,rgba(255,199,140,0)_45%),linear-gradient(320deg,#ff5fd1,rgba(255,95,209,0)_35%)] opacity-100" />
                 <div className="relative rounded-[22px] bg-[#060918]/60 backdrop-blur-md border border-white/5 px-6 py-5 flex gap-4 min-h-[140px]">
                   <div className="mt-1 h-11 w-11 rounded-2xl bg-[linear-gradient(160deg,#ffe7a3,#ff996a)] shadow-[0_0_25px_rgba(255,167,109,0.75)]" />
@@ -186,12 +186,13 @@ export default function Home() {
           </div>
         </section>
 
-        {/* alt blok */}
-        <section className="mx-auto w-full max-w-6xl px-4 lg:px-0 pb-16 pt-6">
+        {/* alt blok – biraz aşağı aldım */}
+        <section className="mx-auto w-full max-w-6xl px-4 lg:px-0 pb-16 pt-10">
           <h2 className="text-lg font-semibold mb-2">Product</h2>
           <p className="text-sm text-slate-100/55 max-w-2xl">
-            Buraya lunvi.io ürün akışlarını, endpoint ve logging bileşenlerini
-            ekleyebilirsin. Üst hero ile aynı koyu mor zemini koruduk.
+            Buraya lunvi.io hattında çalışacak endpoint, workflow ve logging
+            bölümlerini ekleyebilirsin. Üstteki hero ile aynı koyu mor temayı
+            koruduk.
           </p>
         </section>
 
