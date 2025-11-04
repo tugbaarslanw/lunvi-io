@@ -67,11 +67,12 @@ export default function Home() {
               </p>
 
               {/* title */}
-              <h1 className="text-4xl leading-tight font-semibold md:text-5xl">
-                <span className="block text-white">
-                  The premium gateway
+              <h1 className="text-4xl leading-tight font-semibold md:text-5xl space-y-1">
+                <span className="block text-white">The premium gateway</span>
+                <span className="block text-white">for</span>
+                <span className="block bg-gradient-to-r from-[#a855f7] via-[#8b5cf6] to-[#6366f1] bg-clip-text text-transparent">
+                  server-side
                 </span>
-                <span className="block text-white">for server-side</span>
                 <span className="block bg-gradient-to-r from-[#a855f7] via-[#8b5cf6] to-[#6366f1] bg-clip-text text-transparent">
                   Conversions APIs
                   <span className="text-white">.</span>
@@ -184,8 +185,8 @@ export default function Home() {
           </div>
         </section>
 
-        {/* PRODUCT SECTION - aşağı kaydırdım */}
-        <section className="mx-auto w-full max-w-6xl px-4 lg:px-0 pb-16 pt-28">
+        {/* PRODUCT SECTION - daha aşağıda */}
+        <section className="mx-auto w-full max-w-6xl px-4 lg:px-0 pb-16 pt-40">
           <h2 className="text-lg font-semibold mb-2">Product</h2>
           <p className="text-sm text-slate-100/55 max-w-2xl">
             Buraya lunvi.io hattında çalışacak endpoint, workflow ve logging
