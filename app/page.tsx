@@ -3,10 +3,9 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#0b0714] text-white">
-      {/* HEADER – koyu mor bant */}
+      {/* HEADER – koyu mor */}
       <header className="sticky top-0 z-30 bg-gradient-to-r from-[#1f1238] via-[#231844] to-[#2f2258] border-b border-white/5">
         <div className="mx-auto flex h-[70px] max-w-6xl items-center justify-between px-6">
-          {/* sol logo */}
           <div className="flex items-center gap-2">
             <Image
               src="/logo.png"
@@ -21,7 +20,6 @@ export default function Home() {
             </span>
           </div>
 
-          {/* sağ nav */}
           <div className="flex items-center gap-6">
             <nav className="hidden items-center gap-5 text-sm text-white/85 md:flex">
               <a href="#" className="hover:text-white transition">
@@ -52,13 +50,13 @@ export default function Home() {
 
       {/* HERO */}
       <section className="relative overflow-hidden bg-gradient-to-b from-[#492a91] via-[#352066] to-[#0b0714]">
-        {/* hafif glowlar */}
+        {/* arka glowlar hafif */}
         <div className="pointer-events-none absolute -right-20 -top-24 h-56 w-56 rounded-full bg-[#9b83d9]/12 blur-2xl" />
         <div className="pointer-events-none absolute -left-40 top-12 h-[420px] w-[420px] rounded-full bg-[#805de3]/10 blur-3xl" />
         <div className="pointer-events-none absolute right-4 top-72 h-48 w-48 rounded-full bg-[#34d1be]/10 blur-2xl" />
 
         <div className="mx-auto flex max-w-6xl flex-col gap-10 px-6 pb-16 pt-14 lg:flex-row">
-          {/* sol metin */}
+          {/* sol taraf */}
           <div className="relative z-10 max-w-xl">
             <p className="text-xs uppercase tracking-[0.35em] text-white/70">
               premium gateway • server-side
@@ -105,17 +103,17 @@ export default function Home() {
             </div>
           </div>
 
-          {/* sağ neon cam kutular */}
+          {/* sağdaki 3 neon cam kutu */}
           <div className="relative z-10 flex flex-1 flex-col gap-5 lg:max-w-sm">
-            {/* kart 1 – mor */}
-            <div className="neon-border-purple rounded-[28px] p-[1.5px]">
-              <div className="relative rounded-[24px] bg-gradient-to-br from-[#1a102a]/90 via-[#2c1d46]/60 to-[#1a0f28]/50 p-5 backdrop-blur-md">
-                {/* sağ üst logo */}
+            {/* kart 1 */}
+            <div className="gradient-frame rounded-[28px] p-[1.4px]">
+              <div className="relative rounded-[25px] bg-gradient-to-br from-[#1a102a]/85 via-[#2c1d46]/40 to-[#1a0f28]/10 p-5 backdrop-blur-md">
+                {/* sağ üst küçük logo */}
                 <div className="pointer-events-none absolute right-4 top-4 h-6 w-6 opacity-90">
                   <Image src="/logo.png" alt="Lunvi" width={24} height={24} className="h-6 w-6 object-contain" />
                 </div>
 
-                {/* sol renkli ikon */}
+                {/* sol neon ikon */}
                 <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-2xl bg-gradient-to-br from-[#d9d3ff] to-[#7f71ff] shadow-[0_0_18px_rgba(190,177,255,0.7)]">
                   <span className="text-[12px] text-[#120b22] font-bold">●</span>
                 </div>
@@ -127,10 +125,9 @@ export default function Home() {
               </div>
             </div>
 
-            {/* kart 2 – turkuaz/mavi */}
-            <div className="neon-border-cyan rounded-[28px] p-[1.5px]">
-              <div className="relative rounded-[24px] bg-gradient-to-br from-[#071a1d]/90 via-[#0f2f33]/70 to-[#153f44]/50 p-5 backdrop-blur-md">
-                {/* sağ üst logo */}
+            {/* kart 2 */}
+            <div className="gradient-frame rounded-[28px] p-[1.4px]">
+              <div className="relative rounded-[25px] bg-gradient-to-br from-[#071a1d]/85 via-[#0f2f33]/35 to-[#153f44]/5 p-5 backdrop-blur-md">
                 <div className="pointer-events-none absolute right-4 top-4 h-6 w-6 opacity-90">
                   <Image src="/logo.png" alt="Lunvi" width={24} height={24} className="h-6 w-6 object-contain" />
                 </div>
@@ -146,10 +143,9 @@ export default function Home() {
               </div>
             </div>
 
-            {/* kart 3 – güçlü mor/pembe */}
-            <div className="neon-border-magenta rounded-[28px] p-[1.5px]">
-              <div className="relative rounded-[24px] bg-gradient-to-br from-[#210f22]/90 via-[#351231]/65 to-[#44204c]/45 p-5 backdrop-blur-md">
-                {/* sağ üst logo */}
+            {/* kart 3 */}
+            <div className="gradient-frame rounded-[28px] p-[1.4px]">
+              <div className="relative rounded-[25px] bg-gradient-to-br from-[#210f22]/85 via-[#351231]/35 to-[#44204c]/5 p-5 backdrop-blur-md">
                 <div className="pointer-events-none absolute right-4 top-4 h-6 w-6 opacity-90">
                   <Image src="/logo.png" alt="Lunvi" width={24} height={24} className="h-6 w-6 object-contain" />
                 </div>
@@ -167,9 +163,9 @@ export default function Home() {
           </div>
         </div>
 
-        {/* hareketli border animasyonu */}
+        {/* gradient border animasyonu – firstbase tarzı */}
         <style jsx>{`
-          @keyframes neonShift {
+          @keyframes barShift {
             0% {
               background-position: 0% 50%;
             }
@@ -180,20 +176,15 @@ export default function Home() {
               background-position: 0% 50%;
             }
           }
-          .neon-border-purple {
-            background: linear-gradient(120deg, #c3b5ff, #6e4fff, #c3b5ff);
-            background-size: 200% 200%;
-            animation: neonShift 6s ease-in-out infinite;
-          }
-          .neon-border-cyan {
-            background: linear-gradient(120deg, #9cfff1, #2ed8bf, #68e2ff);
-            background-size: 200% 200%;
-            animation: neonShift 6s ease-in-out infinite;
-          }
-          .neon-border-magenta {
-            background: linear-gradient(120deg, #ffb7ed, #a35bff, #ffb7ed);
-            background-size: 200% 200%;
-            animation: neonShift 7s ease-in-out infinite;
+          .gradient-frame {
+            background: linear-gradient(
+              90deg,
+              #4e8df5 0%,
+              #be63ff 50%,
+              #69b5ff 100%
+            );
+            background-size: 180% 180%;
+            animation: barShift 7s ease-in-out infinite;
           }
         `}</style>
       </section>
