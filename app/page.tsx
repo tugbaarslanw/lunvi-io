@@ -263,125 +263,58 @@ export default function Home() {
           </div>
         </section>
 
-        {/* PRODUCT SECTION – neon glass */}
+        {/* PRODUCT SECTION – genişletilmiş */}
         <section className="mx-auto w-full max-w-6xl px-4 lg:px-0 pb-20 pt-44">
           <h2 className="text-lg font-semibold mb-2">Product</h2>
           <p className="text-sm text-slate-100/55 max-w-2xl mb-8">
-            Modular server-side blocks to run your conversions stack from one place.
+            Buraya lunvi.io hattında çalışacak endpoint, workflow ve logging
+            bölümlerini ekleyebilirsin. Hero’daki premium görünümü bozmayacak
+            şekilde altta cam kartlarla devam ettik.
           </p>
 
           <div className="grid gap-6 md:grid-cols-3">
-            {/* card 1 */}
-            <div className="relative rounded-2xl bg-[linear-gradient(120deg,rgba(168,85,247,0.9),rgba(99,102,241,0.3))] p-[1.5px]">
-              <div className="h-full rounded-2xl bg-[#050818]/50 backdrop-blur-sm border border-white/5 p-5 flex flex-col gap-3">
-                <div className="h-10 w-10 rounded-xl bg-[radial-gradient(circle,#fff,#a855f7_55%,rgba(168,85,247,0)_75%)] flex items-center justify-center text-sm font-semibold shadow-[0_0_20px_rgba(168,85,247,0.6)]">
-                  01
-                </div>
-                <h3 className="font-semibold text-white">Server-side Endpoint</h3>
-                <p className="text-sm text-slate-100/70">
-                  Secure, region-aware endpoints for Meta CAPI, GA4 and TikTok events.
-                </p>
+            {/* Endpoint card */}
+            <div className="rounded-2xl bg-white/5 border border-white/5 backdrop-blur-sm p-5 flex flex-col gap-3">
+              <div className="h-9 w-9 rounded-xl bg-gradient-to-br from-[#a855f7] to-[#6366f1] flex items-center justify-center text-sm font-semibold">
+                1
               </div>
-            </div>
-
-            {/* card 2 */}
-            <div className="relative rounded-2xl bg-[linear-gradient(140deg,rgba(46,252,255,0.9),rgba(123,92,255,0.25))] p-[1.5px]">
-              <div className="h-full rounded-2xl bg-[#050818]/50 backdrop-blur-sm border border-white/5 p-5 flex flex-col gap-3">
-                <div className="h-10 w-10 rounded-xl bg-[radial-gradient(circle,#fff,#2efcff_55%,rgba(46,252,255,0)_75%)] flex items-center justify-center text-sm font-semibold text-[#020617] shadow-[0_0_20px_rgba(46,252,255,0.6)]">
-                  02
-                </div>
-                <h3 className="font-semibold text-white">Orchestrated Workflows</h3>
-                <p className="text-sm text-slate-100/70">
-                  Enrich, deduplicate and route events to multiple destinations with
-                  presets.
-                </p>
-              </div>
-            </div>
-
-            {/* card 3 */}
-            <div className="relative rounded-2xl bg-[linear-gradient(140deg,rgba(255,77,138,0.9),rgba(240,135,255,0.25))] p-[1.5px]">
-              <div className="h-full rounded-2xl bg-[#050818]/50 backdrop-blur-sm border border-white/5 p-5 flex flex-col gap-3">
-                <div className="h-10 w-10 rounded-xl bg-[radial-gradient(circle,#fff,#ff4d8a_55%,rgba(255,77,138,0)_75%)] flex items-center justify-center text-sm font-semibold shadow-[0_0_20px_rgba(255,77,138,0.6)]">
-                  03
-                </div>
-                <h3 className="font-semibold text-white">Live Logs & Debugger</h3>
-                <p className="text-sm text-slate-100/70">
-                  Inspect delivery status in real-time, replay failed events and monitor
-                  latency.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* SOLUTIONS SECTION */}
-        <section className="mx-auto w-full max-w-6xl px-4 lg:px-0 pb-24">
-          <div className="flex items-center justify-between gap-4 mb-6">
-            <div>
-              <h2 className="text-lg font-semibold">Solutions</h2>
-              <p className="text-sm text-slate-100/55">
-                Ready-made blueprints for the most common conversion delivery scenarios.
+              <h3 className="font-semibold">Endpoint & Gateway</h3>
+              <p className="text-sm text-slate-100/70">
+                Meta CAPI, GA4 veya TikTok için ayrı endpoint’ler aç, tek panelden
+                yönet.
               </p>
-            </div>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-3">
-            {/* solution 1 */}
-            <div className="relative rounded-2xl bg-[linear-gradient(150deg,rgba(129,140,248,0.7),rgba(15,23,42,0))] p-[1.5px]">
-              <div className="h-full rounded-2xl bg-[#060918]/50 border border-white/5 backdrop-blur-sm p-5 flex flex-col gap-3">
-                <div className="inline-flex items-center gap-2 rounded-full bg-white/5 px-3 py-1 text-[11px] text-slate-100/80">
-                  E-commerce
-                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-400/90" />
-                </div>
-                <h3 className="font-semibold text-white">
-                  Purchase & ATC forwarding
-                </h3>
-                <p className="text-sm text-slate-100/65">
-                  Send high-quality purchase and add-to-cart events to Meta CAPI and
-                  GA4 with dedup enabled.
-                </p>
-                <button className="mt-auto text-xs text-slate-100/80 hover:text-white inline-flex items-center gap-1">
-                  View flow
-                  <span aria-hidden>→</span>
-                </button>
+              <div className="mt-auto pt-2 text-xs text-slate-100/40">
+                /api/conversions
               </div>
             </div>
 
-            {/* solution 2 */}
-            <div className="relative rounded-2xl bg-[linear-gradient(150deg,rgba(45,212,191,0.6),rgba(15,23,42,0))] p-[1.5px]">
-              <div className="h-full rounded-2xl bg-[#060918]/50 border border-white/5 backdrop-blur-sm p-5 flex flex-col gap-3">
-                <div className="inline-flex items-center gap-2 rounded-full bg-white/5 px-3 py-1 text-[11px] text-slate-100/80">
-                  Lead Gen
-                  <span className="h-1.5 w-1.5 rounded-full bg-sky-400/90" />
-                </div>
-                <h3 className="font-semibold text-white">Lead enrichment & sync</h3>
-                <p className="text-sm text-slate-100/65">
-                  Capture forms from web, enrich with geo & consent, push to ads and
-                  analytics destinations.
-                </p>
-                <button className="mt-auto text-xs text-slate-100/80 hover:text-white inline-flex items-center gap-1">
-                  View flow
-                  <span aria-hidden>→</span>
-                </button>
+            {/* Workflow card */}
+            <div className="rounded-2xl bg-white/5 border border-white/5 backdrop-blur-sm p-5 flex flex-col gap-3">
+              <div className="h-9 w-9 rounded-xl bg-gradient-to-br from-[#2efcff] to-[#7b5cff] flex items-center justify-center text-sm font-semibold text-[#020617]">
+                2
+              </div>
+              <h3 className="font-semibold">Workflows</h3>
+              <p className="text-sm text-slate-100/70">
+                Event’leri enrich et, consent durumunu kontrol et, multi-tenant
+                kurulumlarda preset kullan.
+              </p>
+              <div className="mt-auto pt-2 text-xs text-slate-100/40">
+                6 adede kadar step destekli
               </div>
             </div>
 
-            {/* solution 3 */}
-            <div className="relative rounded-2xl bg-[linear-gradient(150deg,rgba(236,72,153,0.7),rgba(15,23,42,0))] p-[1.5px]">
-              <div className="h-full rounded-2xl bg-[#060918]/50 border border-white/5 backdrop-blur-sm p-5 flex flex-col gap-3">
-                <div className="inline-flex items-center gap-2 rounded-full bg-white/5 px-3 py-1 text-[11px] text-slate-100/80">
-                  Agencies
-                  <span className="h-1.5 w-1.5 rounded-full bg-fuchsia-400/90" />
-                </div>
-                <h3 className="font-semibold text-white">Multi-tenant routing</h3>
-                <p className="text-sm text-slate-100/65">
-                  Manage multiple brands from one sGTM-like panel, each with its own
-                  domains and consent.
-                </p>
-                <button className="mt-auto text-xs text-slate-100/80 hover:text-white inline-flex items-center gap-1">
-                  View flow
-                  <span aria-hidden>→</span>
-                </button>
+            {/* Logging card */}
+            <div className="rounded-2xl bg-white/5 border border-white/5 backdrop-blur-sm p-5 flex flex-col gap-3">
+              <div className="h-9 w-9 rounded-xl bg-gradient-to-br from-[#ff4d8a] to-[#f97316] flex items-center justify-center text-sm font-semibold">
+                3
+              </div>
+              <h3 className="font-semibold">Live log & debugger</h3>
+              <p className="text-sm text-slate-100/70">
+                Teslimatları gerçek zamanlı izle, hata oranını gör, yeniden
+                gönderim tetikle.
+              </p>
+              <div className="mt-auto pt-2 text-xs text-slate-100/40">
+                JSON & timeline view
               </div>
             </div>
           </div>
