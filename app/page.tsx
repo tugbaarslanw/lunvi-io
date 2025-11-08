@@ -314,6 +314,79 @@ export default function Home() {
           </div>
         </section>
 
+        {/* SOLUTIONS SECTION */}
+        <section className="mx-auto w-full max-w-6xl px-4 lg:px-0 pb-24">
+          <div className="flex items-center justify-between gap-4 mb-6">
+            <div>
+              <h2 className="text-lg font-semibold">Solutions</h2>
+              <p className="text-sm text-slate-100/55">
+                Ready-made blueprints for the most common conversion delivery scenarios.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-3">
+            {/* solution 1 */}
+            <div className="relative rounded-2xl bg-[linear-gradient(150deg,rgba(129,140,248,0.7),rgba(15,23,42,0))] p-[1.5px]">
+              <div className="h-full rounded-2xl bg-[#060918]/50 border border-white/5 backdrop-blur-sm p-5 flex flex-col gap-3">
+                <div className="inline-flex items-center gap-2 rounded-full bg-white/5 px-3 py-1 text-[11px] text-slate-100/80">
+                  E-commerce
+                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-400/90" />
+                </div>
+                <h3 className="font-semibold text-white">
+                  Purchase & ATC forwarding
+                </h3>
+                <p className="text-sm text-slate-100/65">
+                  Send high-quality purchase and add-to-cart events to Meta CAPI and
+                  GA4 with dedup enabled.
+                </p>
+                <button className="mt-auto text-xs text-slate-100/80 hover:text-white inline-flex items-center gap-1">
+                  View flow
+                  <span aria-hidden>→</span>
+                </button>
+              </div>
+            </div>
+
+            {/* solution 2 */}
+            <div className="relative rounded-2xl bg-[linear-gradient(150deg,rgba(45,212,191,0.6),rgba(15,23,42,0))] p-[1.5px]">
+              <div className="h-full rounded-2xl bg-[#060918]/50 border border-white/5 backdrop-blur-sm p-5 flex flex-col gap-3">
+                <div className="inline-flex items-center gap-2 rounded-full bg-white/5 px-3 py-1 text-[11px] text-slate-100/80">
+                  Lead Gen
+                  <span className="h-1.5 w-1.5 rounded-full bg-sky-400/90" />
+                </div>
+                <h3 className="font-semibold text-white">Lead enrichment & sync</h3>
+                <p className="text-sm text-slate-100/65">
+                  Capture forms from web, enrich with geo & consent, push to ads and
+                  analytics destinations.
+                </p>
+                <button className="mt-auto text-xs text-slate-100/80 hover:text-white inline-flex items-center gap-1">
+                  View flow
+                  <span aria-hidden>→</span>
+                </button>
+              </div>
+            </div>
+
+            {/* solution 3 */}
+            <div className="relative rounded-2xl bg-[linear-gradient(150deg,rgba(236,72,153,0.7),rgba(15,23,42,0))] p-[1.5px]">
+              <div className="h-full rounded-2xl bg-[#060918]/50 border border-white/5 backdrop-blur-sm p-5 flex flex-col gap-3">
+                <div className="inline-flex items-center gap-2 rounded-full bg-white/5 px-3 py-1 text-[11px] text-slate-100/80">
+                  Agencies
+                  <span className="h-1.5 w-1.5 rounded-full bg-fuchsia-400/90" />
+                </div>
+                <h3 className="font-semibold text-white">Multi-tenant routing</h3>
+                <p className="text-sm text-slate-100/65">
+                  Manage multiple brands from one sGTM-like panel, each with its own
+                  domains and consent.
+                </p>
+                <button className="mt-auto text-xs text-slate-100/80 hover:text-white inline-flex items-center gap-1">
+                  View flow
+                  <span aria-hidden>→</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <footer className="py-8 text-center text-xs text-slate-100/40 border-t border-white/5">
           © 2025 lunvi.io — separate from lunvilabs.com
         </footer>
