@@ -263,58 +263,52 @@ export default function Home() {
           </div>
         </section>
 
-        {/* PRODUCT SECTION – genişletilmiş */}
+        {/* PRODUCT SECTION – neon glass */}
         <section className="mx-auto w-full max-w-6xl px-4 lg:px-0 pb-20 pt-44">
           <h2 className="text-lg font-semibold mb-2">Product</h2>
           <p className="text-sm text-slate-100/55 max-w-2xl mb-8">
-            Buraya lunvi.io hattında çalışacak endpoint, workflow ve logging
-            bölümlerini ekleyebilirsin. Hero’daki premium görünümü bozmayacak
-            şekilde altta cam kartlarla devam ettik.
+            Modular server-side blocks to run your conversions stack from one place.
           </p>
 
           <div className="grid gap-6 md:grid-cols-3">
-            {/* Endpoint card */}
-            <div className="rounded-2xl bg-white/5 border border-white/5 backdrop-blur-sm p-5 flex flex-col gap-3">
-              <div className="h-9 w-9 rounded-xl bg-gradient-to-br from-[#a855f7] to-[#6366f1] flex items-center justify-center text-sm font-semibold">
-                1
-              </div>
-              <h3 className="font-semibold">Endpoint & Gateway</h3>
-              <p className="text-sm text-slate-100/70">
-                Meta CAPI, GA4 veya TikTok için ayrı endpoint’ler aç, tek panelden
-                yönet.
-              </p>
-              <div className="mt-auto pt-2 text-xs text-slate-100/40">
-                /api/conversions
+            {/* card 1 */}
+            <div className="relative rounded-2xl bg-[linear-gradient(120deg,rgba(168,85,247,0.9),rgba(99,102,241,0.3))] p-[1.5px]">
+              <div className="h-full rounded-2xl bg-[#050818]/50 backdrop-blur-sm border border-white/5 p-5 flex flex-col gap-3">
+                <div className="h-10 w-10 rounded-xl bg-[radial-gradient(circle,#fff,#a855f7_55%,rgba(168,85,247,0)_75%)] flex items-center justify-center text-sm font-semibold shadow-[0_0_20px_rgba(168,85,247,0.6)]">
+                  01
+                </div>
+                <h3 className="font-semibold text-white">Server-side Endpoint</h3>
+                <p className="text-sm text-slate-100/70">
+                  Secure, region-aware endpoints for Meta CAPI, GA4 and TikTok events.
+                </p>
               </div>
             </div>
 
-            {/* Workflow card */}
-            <div className="rounded-2xl bg-white/5 border border-white/5 backdrop-blur-sm p-5 flex flex-col gap-3">
-              <div className="h-9 w-9 rounded-xl bg-gradient-to-br from-[#2efcff] to-[#7b5cff] flex items-center justify-center text-sm font-semibold text-[#020617]">
-                2
-              </div>
-              <h3 className="font-semibold">Workflows</h3>
-              <p className="text-sm text-slate-100/70">
-                Event’leri enrich et, consent durumunu kontrol et, multi-tenant
-                kurulumlarda preset kullan.
-              </p>
-              <div className="mt-auto pt-2 text-xs text-slate-100/40">
-                6 adede kadar step destekli
+            {/* card 2 */}
+            <div className="relative rounded-2xl bg-[linear-gradient(140deg,rgba(46,252,255,0.9),rgba(123,92,255,0.25))] p-[1.5px]">
+              <div className="h-full rounded-2xl bg-[#050818]/50 backdrop-blur-sm border border-white/5 p-5 flex flex-col gap-3">
+                <div className="h-10 w-10 rounded-xl bg-[radial-gradient(circle,#fff,#2efcff_55%,rgba(46,252,255,0)_75%)] flex items-center justify-center text-sm font-semibold text-[#020617] shadow-[0_0_20px_rgba(46,252,255,0.6)]">
+                  02
+                </div>
+                <h3 className="font-semibold text-white">Orchestrated Workflows</h3>
+                <p className="text-sm text-slate-100/70">
+                  Enrich, deduplicate and route events to multiple destinations with
+                  presets.
+                </p>
               </div>
             </div>
 
-            {/* Logging card */}
-            <div className="rounded-2xl bg-white/5 border border-white/5 backdrop-blur-sm p-5 flex flex-col gap-3">
-              <div className="h-9 w-9 rounded-xl bg-gradient-to-br from-[#ff4d8a] to-[#f97316] flex items-center justify-center text-sm font-semibold">
-                3
-              </div>
-              <h3 className="font-semibold">Live log & debugger</h3>
-              <p className="text-sm text-slate-100/70">
-                Teslimatları gerçek zamanlı izle, hata oranını gör, yeniden
-                gönderim tetikle.
-              </p>
-              <div className="mt-auto pt-2 text-xs text-slate-100/40">
-                JSON & timeline view
+            {/* card 3 */}
+            <div className="relative rounded-2xl bg-[linear-gradient(140deg,rgba(255,77,138,0.9),rgba(240,135,255,0.25))] p-[1.5px]">
+              <div className="h-full rounded-2xl bg-[#050818]/50 backdrop-blur-sm border border-white/5 p-5 flex flex-col gap-3">
+                <div className="h-10 w-10 rounded-xl bg-[radial-gradient(circle,#fff,#ff4d8a_55%,rgba(255,77,138,0)_75%)] flex items-center justify-center text-sm font-semibold shadow-[0_0_20px_rgba(255,77,138,0.6)]">
+                  03
+                </div>
+                <h3 className="font-semibold text-white">Live Logs & Debugger</h3>
+                <p className="text-sm text-slate-100/70">
+                  Inspect delivery status in real-time, replay failed events and monitor
+                  latency.
+                </p>
               </div>
             </div>
           </div>
